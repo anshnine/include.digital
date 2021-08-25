@@ -6,16 +6,25 @@
     <!-- Настройка viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Include.digital</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <!-- Bootstrap CSS (jsDelivr CDN) -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
+
     <link href="/css/maincss.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
           rel="stylesheet">
     <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
     <script defer src="/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
+
 
 <div class="container">
     <header class="header">
@@ -25,7 +34,7 @@
         <div class="header_menu">
             <a class="header_menu_link" href="index.html">Главная</a>
             <a class="header_menu_link" href="services.html">Услуги</a>
-            <a class="header_menu_link">Проекты</a>
+            <a class="header_menu_link" href="">Проекты</a>
             <a class="header_menu_link">Компании</a>
             <a class="header_menu_link">Блог</a>
             <a class="header_menu_link">Контакты</a>
@@ -34,29 +43,35 @@
             <a>Обсудить проект</a>
         </div>
     </header>
-    <div class="main-page">
-        <div class="main-page_textblock">
-            <div class="main-page_textblock_title">
+    <div class="homemain-page">
+        <div class="homemain-page_textblock">
+            <div class="homemain-page_textblock_title">
                 <span>ИНТЕГРАЦИЯ ИНФОРМАЦИОННЫХ СИСТЕМ В ВАШ БИЗНЕС</span>
             </div>
-            <div class="main-page_textblock_subtitle">
+            <div class="homemain-page_textblock_subtitle">
                 <span>Команда профессионалов  для решения задач вашего бизнеса</span>
             </div>
         </div>
-        <div class="main-page_carusel">
-            <span class=""><img src="img/logo%201.png" alt=""></span>
-            <span class=""><img src="img/logo%202.png" alt=""></span>
-            <span class=""><img src="img/logo%203.png" alt=""></span>
-            <span class=""><img src="img/logo%204.png" alt=""></span>
-            <span class=""><img src="img/logo%205.png" alt=""></span>
-            <span class=""><img src="img/logo%206.png" alt=""></span>
-            <span class=""><img src="img/logo%207.png" alt=""></span>
+
+
+        <div class="homemain-page_carusel ml-4">
+
+
+            <img src="img/logo%201.png" alt="">
+            <img src="img/logo%202.png" alt="">
+            <img src="img/logo%203.png" alt="">
+            <img src="img/logo%204.png" alt="">
+            <img src="img/logo%205.png" alt="">
+            <img src="img/logo%206.png" alt="">
+            <img src="img/logo%207.png" alt="">
+
         </div>
+
 
     </div>
     <div class="services">
 
-        <div class="services_leftmenu">
+        <div class="services_leftmenu col-3">
 
             <div class="services_leftmenu_general">
 
@@ -75,69 +90,97 @@
 
             <div class="allservices"><span>Все услуги</span><img class="redarrow" src="img/Vector.svg" alt=""></div>
         </div>
-        <div class="services_rightmenu">
+        <div class="ml-2 service-list_rightmenu col-9">
+            <div class="row">
+                <div class="service-list_rightmenu_block  mb-4 mr-4">
 
-            <div class="services_rightmenu_block">
-                <div class="services_rightmenu_block_text">
-                    <div class="services_rightmenu_block_text_title">
-                        <span class="">Корпоративные сайты</span>
+                    <div class="service-list_rightmenu_block_text">
+
+                        <div class="service-list_rightmenu_block_text_title ml-3 ">
+                            <span>Корпоративные сайты</span>
+                        </div>
+
+                        <div class="service-list_rightmenu_block_text_description ml-3">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                        </div>
+
+                        <div class="service-list_rightmenu_block_text_detail ml-3">
+                            <span>Подробнее</span><img class="redarrow" src="img/Vector.svg" alt="">
+                        </div>
+
+
                     </div>
-                    <div class="services_rightmenu_block_text_text"><span class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                    </div>
-                    <div class="services_rightmenu_block_text_details"><a>Подробнее</a><img class="redarrow"
-                                                                                            src="img/Vector.svg"
-                                                                                            alt="">
+                    <div class="service-list_rightmenu_block_image">
+                        <img src="/img/pic.png" alt="">
                     </div>
                 </div>
-                <div class="services_rightmenu_block_image"><img src="/img/pic.png" alt=""></div>
+                <div class="service-list_rightmenu_block  mb-4 ">
 
-            </div>
-            <div class="services_rightmenu_block">
-                <div class="services_rightmenu_block_text">
-                    <div class="services_rightmenu_block_text_title">
-                        <span class="">Корпоративные сайты</span>
+                    <div class="service-list_rightmenu_block_text">
+
+                        <div class="service-list_rightmenu_block_text_title ml-3 ">
+                            <span>Корпоративные сайты</span>
+                        </div>
+
+                        <div class="service-list_rightmenu_block_text_description ml-3">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                        </div>
+
+                        <div class="service-list_rightmenu_block_text_detail ml-3">
+                            <span>Подробнее</span><img class="redarrow" src="img/Vector.svg" alt="">
+                        </div>
+
+
                     </div>
-                    <div class="services_rightmenu_block_text_text"><span class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                    </div>
-                    <div class="services_rightmenu_block_text_details"><a>Подробнее</a><img class="redarrow"
-                                                                                            src="img/Vector.svg"
-                                                                                            alt="">
+                    <div class="service-list_rightmenu_block_image">
+                        <img src="/img/pic.png" alt="">
                     </div>
                 </div>
-                <div class="services_rightmenu_block_image"><img src="/img/pic3.png" alt=""></div>
+                <div class="service-list_rightmenu_block  mb-4 mr-4">
 
-            </div>
-            <div class="services_rightmenu_block">
-                <div class="services_rightmenu_block_text">
-                    <div class="services_rightmenu_block_text_title">
-                        <span class="">Корпоративные сайты</span>
+                    <div class="service-list_rightmenu_block_text">
+
+                        <div class="service-list_rightmenu_block_text_title ml-3 ">
+                            <span>Корпоративные сайты</span>
+                        </div>
+
+                        <div class="service-list_rightmenu_block_text_description ml-3">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                        </div>
+
+                        <div class="service-list_rightmenu_block_text_detail ml-3">
+                            <span>Подробнее</span><img class="redarrow" src="img/Vector.svg" alt="">
+                        </div>
+
+
                     </div>
-                    <div class="services_rightmenu_block_text_text"><span class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                    </div>
-                    <div class="services_rightmenu_block_text_details"><a>Подробнее</a><img class="redarrow"
-                                                                                            src="img/Vector.svg"
-                                                                                            alt="">
+                    <div class="service-list_rightmenu_block_image">
+                        <img src="/img/pic.png" alt="">
                     </div>
                 </div>
-                <div class="services_rightmenu_block_image"><img src="/img/pic.png" alt=""></div>
+                <div class="service-list_rightmenu_block  mb-4 ">
 
-            </div>
-            <div class="services_rightmenu_block">
-                <div class="services_rightmenu_block_text">
-                    <div class="services_rightmenu_block_text_title">
-                        <span class="">Корпоративные сайты</span>
+                    <div class="service-list_rightmenu_block_text">
+
+                        <div class="service-list_rightmenu_block_text_title ml-3 ">
+                            <span>Корпоративные сайты</span>
+                        </div>
+
+                        <div class="service-list_rightmenu_block_text_description ml-3">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                        </div>
+
+                        <div class="service-list_rightmenu_block_text_detail ml-3">
+                            <span>Подробнее</span><img class="redarrow" src="img/Vector.svg" alt="">
+                        </div>
+
+
                     </div>
-                    <div class="services_rightmenu_block_text_text"><span class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                    </div>
-                    <div class="services_rightmenu_block_text_details"><a>Подробнее</a><img class="redarrow"
-                                                                                            src="img/Vector.svg"
-                                                                                            alt="">
+                    <div class="service-list_rightmenu_block_image">
+                        <img src="/img/pic.png" alt="">
                     </div>
                 </div>
-                <div class="services_rightmenu_block_image"><img src="/img/promo1.png" alt=""></div>
-
             </div>
-
         </div>
 
     </div>
@@ -250,10 +293,11 @@
 
         </div>
 
-        <div class="reviews_rightmenu">
+        <div class="reviews_rightmenu owl-carousel owl-theme" id="slider">
 
 
-            <div class="reviews_rightmenu_block">
+            <!--Слайд 1-->
+            <div class="reviews_rightmenu_block slide">
                 <div class="reviews_rightmenu_block_header">
                     <div class="reviews_rightmenu_block_header_photo">
                         <img src="/img/avatar.svg" alt="">
@@ -264,17 +308,17 @@
                     </div>
                 </div>
                 <div class="reviews_rightmenu_block_body">
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida risus at nulla
-                        accumsan, ac porta velit consectetur. Duis molestie dolor dui, ut vestibulum ex congue in.
-                        Cras quis sem quis turpis.
-                    </span>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida risus at nulla
+                                accumsan, ac porta velit consectetur. Duis molestie dolor dui, ut vestibulum ex congue in.
+                                Cras quis sem quis turpis.
+                            </span>
                 </div>
                 <div class="reviews_rightmenu_block_footer">
                     <a href="">Открыть проект</a><img class="redarrow"
                                                       src="img/Vector.svg" alt="">
                 </div>
             </div>
-            <div class="reviews_rightmenu_block">
+            <div class="reviews_rightmenu_block slide">
                 <div class="reviews_rightmenu_block_header">
                     <div class="reviews_rightmenu_block_header_photo">
                         <img src="/img/avatar.svg" alt="">
@@ -285,17 +329,17 @@
                     </div>
                 </div>
                 <div class="reviews_rightmenu_block_body">
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida risus at nulla
-                        accumsan, ac porta velit consectetur. Duis molestie dolor dui, ut vestibulum ex congue in.
-                        Cras quis sem quis turpis.
-                    </span>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida risus at nulla
+                                accumsan, ac porta velit consectetur. Duis molestie dolor dui, ut vestibulum ex congue in.
+                                Cras quis sem quis turpis.
+                            </span>
                 </div>
                 <div class="reviews_rightmenu_block_footer">
                     <a href="">Открыть проект</a><img class="redarrow"
                                                       src="img/Vector.svg" alt="">
                 </div>
             </div>
-            <div class="reviews_rightmenu_block">
+            <div class="reviews_rightmenu_block slide">
                 <div class="reviews_rightmenu_block_header">
                     <div class="reviews_rightmenu_block_header_photo">
                         <img src="/img/avatar.svg" alt="">
@@ -306,18 +350,106 @@
                     </div>
                 </div>
                 <div class="reviews_rightmenu_block_body">
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida risus at nulla
-                        accumsan, ac porta velit consectetur. Duis molestie dolor dui, ut vestibulum ex congue in.
-                        Cras quis sem quis turpis.
-                    </span>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida risus at nulla
+                                accumsan, ac porta velit consectetur. Duis molestie dolor dui, ut vestibulum ex congue in.
+                                Cras quis sem quis turpis.
+                            </span>
                 </div>
                 <div class="reviews_rightmenu_block_footer">
                     <a href="">Открыть проект</a><img class="redarrow"
                                                       src="img/Vector.svg" alt="">
                 </div>
             </div>
+            <div class="reviews_rightmenu_block slide">
+                <div class="reviews_rightmenu_block_header">
+                    <div class="reviews_rightmenu_block_header_photo">
+                        <img src="/img/avatar.svg" alt="">
+                    </div>
+                    <div class="reviews_rightmenu_block_header_name">
+                        <span>Андрей Ильин</span>
+                        <p>Google</p>
+                    </div>
+                </div>
+                <div class="reviews_rightmenu_block_body">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida risus at nulla
+                                accumsan, ac porta velit consectetur. Duis molestie dolor dui, ut vestibulum ex congue in.
+                                Cras quis sem quis turpis.
+                            </span>
+                </div>
+                <div class="reviews_rightmenu_block_footer">
+                    <a href="">Открыть проект</a><img class="redarrow"
+                                                      src="img/Vector.svg" alt="">
+                </div>
+            </div>
+            <div class="reviews_rightmenu_block slide">
+                <div class="reviews_rightmenu_block_header">
+                    <div class="reviews_rightmenu_block_header_photo">
+                        <img src="/img/avatar.svg" alt="">
+                    </div>
+                    <div class="reviews_rightmenu_block_header_name">
+                        <span>Андрей Ильин</span>
+                        <p>Google</p>
+                    </div>
+                </div>
+                <div class="reviews_rightmenu_block_body">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida risus at nulla
+                                accumsan, ac porta velit consectetur. Duis molestie dolor dui, ut vestibulum ex congue in.
+                                Cras quis sem quis turpis.
+                            </span>
+                </div>
+                <div class="reviews_rightmenu_block_footer">
+                    <a href="">Открыть проект</a><img class="redarrow"
+                                                      src="img/Vector.svg" alt="">
+                </div>
+            </div>
+            <div class="reviews_rightmenu_block slide">
+                <div class="reviews_rightmenu_block_header">
+                    <div class="reviews_rightmenu_block_header_photo">
+                        <img src="/img/avatar.svg" alt="">
+                    </div>
+                    <div class="reviews_rightmenu_block_header_name">
+                        <span>Андрей Ильин</span>
+                        <p>Google</p>
+                    </div>
+                </div>
+                <div class="reviews_rightmenu_block_body">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida risus at nulla
+                                accumsan, ac porta velit consectetur. Duis molestie dolor dui, ut vestibulum ex congue in.
+                                Cras quis sem quis turpis.
+                            </span>
+                </div>
+                <div class="reviews_rightmenu_block_footer">
+                    <a href="">Открыть проект</a><img class="redarrow"
+                                                      src="img/Vector.svg" alt="">
+                </div>
+            </div>
+
+
         </div>
+
+        <!--            <div class="reviews_rightmenu_block">-->
+        <!--                <div class="reviews_rightmenu_block_header">-->
+        <!--                    <div class="reviews_rightmenu_block_header_photo">-->
+        <!--                        <img src="/img/avatar.svg" alt="">-->
+        <!--                    </div>-->
+        <!--                    <div class="reviews_rightmenu_block_header_name">-->
+        <!--                        <span>Андрей Ильин</span>-->
+        <!--                        <p>Google</p>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--                <div class="reviews_rightmenu_block_body">-->
+        <!--                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida risus at nulla-->
+        <!--                        accumsan, ac porta velit consectetur. Duis molestie dolor dui, ut vestibulum ex congue in.-->
+        <!--                        Cras quis sem quis turpis.-->
+        <!--                    </span>-->
+        <!--                </div>-->
+        <!--                <div class="reviews_rightmenu_block_footer">-->
+        <!--                    <a href="">Открыть проект</a><img class="redarrow"-->
+        <!--                                                      src="img/Vector.svg" alt="">-->
+        <!--                </div>-->
+        <!--            </div>-->
     </div>
+</div>
 </div>
 
 <div class="capture-form">
