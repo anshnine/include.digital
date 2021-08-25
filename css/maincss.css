@@ -61,7 +61,7 @@
 .header_button:hover {
   cursor: pointer;
 }
-.main-page {
+.homemain-page {
   width: 1110px;
   display: flex;
   justify-content: flex-end;
@@ -70,30 +70,30 @@
   background-size: cover;
   margin-bottom: 100px;
 }
-.main-page_textblock {
+.homemain-page_textblock {
   height: 435px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url("/include.digital/img/test.svg");
+  background-image: url("/include-1.digital/img/bg.svg");
   margin-bottom: 40px;
 }
-.main-page_textblock_title {
+.homemain-page_textblock_title {
   line-height: 48px;
 }
-.main-page_textblock_title span {
+.homemain-page_textblock_title span {
   font-size: 48px;
   font-weight: 700;
 }
-.main-page_textblock_subtitle {
+.homemain-page_textblock_subtitle {
   margin-bottom: 100px;
 }
-.main-page_textblock_subtitle span {
+.homemain-page_textblock_subtitle span {
   line-height: 16px;
   font-size: 16px;
   font-weight: normal;
 }
-.main-page_carusel {
+.homemain-page_carusel {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -130,76 +130,9 @@
 }
 .services_leftmenu_general_submenu span:hover {
   transition: 0.5s ease;
-  font-size: 18px;
   opacity: 100%;
   cursor: pointer;
   font-weight: 600;
-}
-.services_rightmenu {
-  width: 825px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.services_rightmenu_block {
-  width: 400px;
-  height: 180px;
-  justify-content: space-between;
-  display: flex;
-  margin-bottom: 25px;
-  background-color: #EEF7FF;
-  background-image: url("/include.digital/img/krug.svg");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  border-radius: 5px;
-}
-.services_rightmenu_block_image {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-.services_rightmenu_block_image img {
-  width: 150px;
-  height: 150px;
-}
-.services_rightmenu_block_text_title {
-  margin-left: 20px;
-  margin-top: 15px;
-  margin-right: 20px;
-}
-.services_rightmenu_block_text_title span {
-  font-weight: 700;
-  font-size: 16px;
-}
-.services_rightmenu_block_text_text {
-  margin-left: 20px;
-  margin-top: 30px;
-  margin-right: 20px;
-}
-.services_rightmenu_block_text_details {
-  margin-left: 20px;
-  margin-top: 30px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-.services_rightmenu_block:hover {
-  cursor: pointer;
-  transition: 0.5s ease;
-  background-color: #374A70;
-  background-image: url("/include.digital/img/krug_hover.svg");
-}
-.services_rightmenu_block:hover span {
-  color: white;
-}
-.services_rightmenu_block:hover img:first-child {
-  transition: 0.5s ease;
-  margin-bottom: 10px;
-}
-.services_rightmenu_block:hover a {
-  color: #f6545c;
-}
-.services_rightmenu_block:hover a:hover {
-  color: #f6545c;
 }
 .portfolio {
   display: flex;
@@ -525,8 +458,8 @@
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  background-image: url("/include.digital/img/test.svg");
-  margin-bottom: 100px;
+  background-image: url("../img/bg.svg");
+  margin-bottom: 150px;
 }
 .main-page_title {
   width: 800px;
@@ -574,7 +507,7 @@
   display: flex;
   background-color: #EEF7FF;
   justify-content: space-between;
-  background-image: url("/include.digital/img/krug.svg");
+  background-image: url("/include-1.digital/img/krug.svg");
   background-repeat: no-repeat;
   background-position: right bottom;
   border-radius: 5px;
@@ -610,7 +543,7 @@
   cursor: pointer;
   transition: 0.5s ease;
   background-color: #374A70;
-  background-image: url("/include.digital/img/krug3.svg");
+  background-image: url("/include-1.digital/img/krug3.svg");
 }
 .service-list_rightmenu_block:hover span {
   color: white;
@@ -880,41 +813,39 @@
 }
 .ads_rightmenu_block:hover {
   background: #374A70;
+  fill: white;
 }
 .ads_rightmenu_block:hover a {
   color: white;
 }
-.ads_rightmenu_block:hover svg {
-  fill: white;
-}
 .ads_rightmenu_block:hover svg path {
   fill: white;
 }
-.ads_leftmenu {
+_leftmenu {
   padding-left: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.ads_leftmenu_general_title {
+_leftmenu_general_title {
   margin-bottom: 20px;
 }
-.ads_leftmenu_general_title span {
+_leftmenu_general_title span {
   color: #FF6565;
   font-weight: 700;
   font-size: 32px;
 }
-.ads_leftmenu_general_submenu {
+_leftmenu_general_submenu {
   display: flex;
   flex-direction: column;
 }
-.ads_leftmenu_general_submenu span {
+_leftmenu_general_submenu span {
   font-size: 14px;
   color: #343745;
   opacity: 35%;
   margin-bottom: 15px;
 }
-.ads_leftmenu_general_submenu span:hover {
+_leftmenu_general_submenu span:hover {
   transition: 0.5s ease;
   font-size: 18px;
   opacity: 100%;
