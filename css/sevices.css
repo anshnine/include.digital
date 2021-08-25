@@ -1,0 +1,224 @@
+* {
+  margin: 0 0 0 0;
+  font-family: "Montserrat", sans-serif;
+  color: #374A70;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.main-page {
+  height: 466px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-image: url("/include.digital/img/test.svg");
+  margin-bottom: 100px;
+}
+.main-page_title {
+  width: 800px;
+}
+.main-page_title span {
+  line-height: 48px;
+  font-size: 48px;
+  font-weight: 700;
+}
+.main-page_services {
+  margin-bottom: 40px;
+  margin-top: 25px;
+  display: flex;
+}
+.main-page_services_text {
+  line-height: 0;
+}
+.main-page_services img {
+  margin-left: 30px;
+}
+.service-list {
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.service-list_leftmenu {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+}
+.service-list_leftmenu_title {
+  margin-bottom: 30px;
+}
+.service-list_leftmenu_title h1 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #FF6565;
+}
+.service-list_leftmenu_description {
+  text-align: justify;
+}
+.service-list_rightmenu_block {
+  height: 180px;
+  width: 400px;
+  display: flex;
+  background-color: #EEF7FF;
+  justify-content: space-between;
+  background-image: url("/include.digital/img/krug.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  border-radius: 5px;
+}
+.service-list_rightmenu_block_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.service-list_rightmenu_block_text_title {
+  margin-top: 15px;
+}
+.service-list_rightmenu_block_text_title span {
+  font-weight: 700;
+}
+.service-list_rightmenu_block_text_detail {
+  margin-bottom: 15px;
+}
+.service-list_rightmenu_block_text_detail span {
+  font-size: 14px;
+}
+.service-list_rightmenu_block_image {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.service-list_rightmenu_block_image img {
+  width: 134px;
+  height: 123px;
+}
+.service-list_rightmenu_block:hover {
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  background-color: #374A70;
+  background-image: url("/include.digital/img/krug3.svg");
+}
+.service-list_rightmenu_block:hover span {
+  color: white;
+}
+.service-list_rightmenu_block:hover img:first-child {
+  transition: 0.5s ease;
+  margin-bottom: 10px;
+}
+.service-list_rightmenu_block:hover a {
+  color: #f6545c;
+}
+.service-list_rightmenu_block:hover a:hover {
+  color: #f6545c;
+}
+.defaultblock {
+  display: flex;
+  margin-bottom: 150px;
+}
+.defaultblock_leftmenu {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+.defaultblock_leftmenu_title {
+  margin-bottom: 30px;
+}
+.defaultblock_leftmenu_title h1 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #FF6565;
+}
+.defaultblock_rightmenu_item {
+  height: 180px;
+  width: 400px;
+  display: flex;
+  background-color: #EEF7FF;
+  justify-content: space-between;
+  background-image: url("/include.digital/img/krug.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  border-radius: 5px;
+}
+.defaultblock_rightmenu_item_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.defaultblock_rightmenu_item_text_title {
+  margin-top: 15px;
+}
+.defaultblock_rightmenu_item_text_title span {
+  font-weight: 700;
+}
+.defaultblock_rightmenu_item_text_detail {
+  margin-bottom: 15px;
+}
+.defaultblock_rightmenu_item_text_detail span {
+  font-size: 14px;
+}
+.defaultblock_rightmenu_item_image {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.defaultblock_rightmenu_item_image img {
+  width: 134px;
+  height: 123px;
+}
+.defaultblock_rightmenu_item:hover {
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  background-color: #374A70;
+  background-image: url("/include.digital/img/krug3.svg");
+}
+.defaultblock_rightmenu_item:hover span {
+  color: white;
+}
+.defaultblock_rightmenu_item:hover img:first-child {
+  transition: 0.5s ease;
+  margin-bottom: 10px;
+}
+.defaultblock_rightmenu_item:hover a {
+  color: #f6545c;
+}
+.defaultblock_rightmenu_item:hover a:hover {
+  color: #f6545c;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  height: 457px;
+  background: #374A70;
+}
+.footer_logo {
+  margin-top: 100px;
+}
+.footer_item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.footer_item_title {
+  margin-bottom: 30px;
+}
+.footer_item_title span {
+  font-size: 18px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+.footer_item_li {
+  line-height: 20px;
+}
+.footer_item_li p {
+  color: white;
+}
+.footer_item_li p a {
+  color: white;
+  text-decoration: none;
+}
+.footer_item_li p a:hover {
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.2s;
+}
+/*# sourceMappingURL=sevices.css.map */

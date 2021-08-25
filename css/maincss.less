@@ -1,0 +1,1324 @@
+
+* {
+  margin: 0 0 0 0;
+  font-family: "Montserrat", sans-serif;
+  color: #374A70;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.button-width {
+  width: 190px;
+  height: 51px;
+}
+
+.btn.ddmenu {
+  font-size: 16px;
+  color: white;
+  outline: none;
+}
+
+.decoration {
+  border-radius: 5px;
+  background: #374A70;
+
+}
+
+.flex-end {
+
+  justify-content: flex-end;
+}
+
+.redarrow {
+  margin-left: 5px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  justify-content: space-between;
+
+
+  &_logo {
+    cursor: pointer;
+  }
+
+  &_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+      padding: 0 15px 0 15px;
+      color: #374A70 !important;
+    }
+
+    &_link {
+      &:hover {
+        cursor: pointer;
+        text-decoration: none;
+        color: #FF6565 !important;
+      }
+    }
+  }
+
+  &_button {
+    width: 255px;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    line-height: 17px;
+    background-color: #FF6565;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.main-page {
+  width: 1110px;
+
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-position: right;
+
+  background-size: cover;
+  margin-bottom: 100px;
+
+  &_textblock {
+    height: 435px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url("/include.digital/img/test.svg");
+    margin-bottom: 40px;
+
+
+    &_title {
+      span {
+        font-size: 48px;
+        font-weight: 700;
+      }
+
+      line-height: 48px;
+
+    }
+
+    &_subtitle {
+      margin-bottom: 100px;
+
+      span {
+        line-height: 16px;
+        font-size: 16px;
+        font-weight: normal;
+      }
+    }
+
+
+  }
+
+  &_carusel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+  flex-direction: row;
+  height: 385px;
+
+  &_leftmenu {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    &_general {
+      &_title {
+        margin-bottom: 20px;
+
+        span {
+          color: #FF6565;
+          font-weight: 700;
+          font-size: 32px;
+
+        }
+
+      }
+
+      &_submenu {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-size: 14px;
+          color: #343745;
+          opacity: 35%;
+          margin-bottom: 15px;
+
+          &:hover {
+            transition: .5s ease;
+            font-size: 18px;
+            opacity: 100%;
+            cursor: pointer;
+            font-weight: 600;
+
+          }
+        }
+      }
+    }
+
+
+  }
+
+  &_rightmenu {
+    width: 825px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+    &_block {
+      width: 400px;
+      height: 180px;
+      justify-content: space-between;
+      display: flex;
+      margin-bottom: 25px;
+      background-color: #EEF7FF;
+
+      background-image: url("/include.digital/img/krug.svg");
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      border-radius: 5px;
+
+      &_image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        img {
+          width: 150px;
+          height: 150px;
+        }
+      }
+
+      &_text {
+        &_title {
+          span {
+            font-weight: 700;
+            font-size: 16px;
+          }
+
+          margin-left: 20px;
+          margin-top: 15px;
+          margin-right: 20px;
+        }
+
+        &_text {
+          margin-left: 20px;
+          margin-top: 30px;
+          margin-right: 20px;
+
+        }
+
+        &_details {
+          margin-left: 20px;
+          margin-top: 30px;
+          margin-right: 20px;
+          margin-bottom: 20px;
+        }
+      }
+
+      &:hover {
+        span {
+          color: white;
+        }
+
+        img:first-child {
+          transition: 0.5s ease;
+          margin-bottom: 10px
+        }
+
+        cursor: pointer;
+        transition: 0.5s ease;
+        background-color: #374A70;
+        background-image: url("/include.digital/img/krug_hover.svg");
+
+
+        a {
+          color: #f6545c
+        }
+
+        a:hover {
+          color: #f6545c;
+        }
+
+      }
+    }
+
+  }
+}
+
+.portfolio {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  height: 630px;
+
+  &_leftmenu {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &_general {
+      &_title {
+        margin-bottom: 20px;
+
+        span {
+          color: #FF6565;
+          font-weight: 700;
+          font-size: 32px;
+
+        }
+
+      }
+
+      &_submenu {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-size: 14px;
+          color: #343745;
+          opacity: 35%;
+          margin-bottom: 15px;
+
+          &:hover {
+            opacity: 100%;
+            cursor: pointer
+          }
+        }
+      }
+    }
+
+
+  }
+
+  &_rightmenu {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+
+    &_block {
+
+      display: flex;
+      padding-left: 23px;
+      justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 5px;
+      margin-bottom: 20px;
+
+      &:hover {
+
+        border: none;
+        background-color: #BB2331;
+        cursor: pointer;
+
+        &title span {
+          color: white;
+        }
+      }
+
+      img {
+        width: 250px;
+        height: 200px;
+      }
+
+      border: 1px solid #BB2331;
+    }
+  }
+}
+
+.clients {
+
+  display: flex;
+  justify-content: space-between;
+  height: 510px;
+  margin-bottom: 150px;
+
+  &_leftmenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    &_general {
+      &_title {
+        margin-bottom: 20px;
+
+        span {
+          color: #FF6565;
+          font-weight: 700;
+          font-size: 32px;
+
+        }
+
+      }
+
+      &_submenu {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-size: 14px;
+          color: #343745;
+          opacity: 35%;
+          margin-bottom: 15px;
+
+          &:hover {
+            opacity: 100%;
+            cursor: pointer
+          }
+        }
+      }
+    }
+
+  }
+
+  &_rightmenu {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &_block {
+
+      display: flex;
+      margin-right: 23px;
+      justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      background-color: #e8f3fc;
+
+      width: 250px;
+
+
+      &:hover {
+
+
+        cursor: pointer;
+        border-radius: 10px;
+        opacity: 90%;
+        background-color: #e1ebfa;
+
+      }
+    }
+  }
+
+}
+
+.reviews {
+  height: 290px;
+  display: flex;
+  width: 1110px;
+  justify-content: space-between;
+  margin-bottom: 100px;
+
+  &_leftmenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    &_general {
+      &_title {
+        margin-bottom: 20px;
+
+        span {
+          color: #FF6565;
+          font-weight: 700;
+          font-size: 32px;
+        }
+      }
+
+      &_submenu {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-size: 14px;
+          color: #343745;
+          opacity: 35%;
+          margin-bottom: 15px;
+
+          &:hover {
+            opacity: 100%;
+            cursor: pointer
+          }
+        }
+      }
+    }
+  }
+
+  &_rightmenu {
+
+    display: flex;
+    width: 825px;
+
+    &_block {
+      height: 290px;
+      background-color: #EEF7FF;
+
+      &_header {
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+
+        &_photo {
+          width: 60px;
+          height: 60px;
+        }
+
+        &_name {
+          margin-left: 10px;
+        }
+      }
+
+      &_body {
+        width: 310px;
+        height: 110px;
+        margin-left: 15px;
+      }
+
+      &_footer {
+        margin-left: 15px;
+      }
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-right: 23px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+
+    }
+
+
+  }
+
+
+}
+
+.capture-form {
+  width: 100%;
+  height: 382px;
+  background: #374A70;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+
+
+  &_leftblock {
+
+    &_title {
+      margin-bottom: 44px;
+
+      span, p {
+        color: white;
+      }
+
+      span {
+        font-weight: 700;
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    &_input {
+
+      ::-webkit-input-placeholder {
+        color: white;
+      }
+
+      ::-moz-placeholder {
+        color: white;
+      }
+
+      /* Firefox 19+ */
+
+      :-moz-placeholder {
+        color: white;
+      }
+
+      /* Firefox 18- */
+
+      :-ms-input-placeholder {
+        color: white;
+      }
+
+      input {
+        padding-bottom: 5px;
+        border: none;
+        border-bottom: 1px solid white;
+        background-color: transparent;
+        color: white;
+        outline: none;
+      }
+
+      border-radius: 5px;
+      display: flex;
+      outline: none;
+      margin-bottom: 16px;
+    }
+
+    &_checkblock {
+      display: flex;
+
+      &_checkbox {
+        margin-right: 5px;
+      }
+
+      span {
+        color: white
+      }
+    }
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_button {
+    margin-left: 15px;
+    margin-top: 65px;
+    width: 235px;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    line-height: 17px;
+    background-color: #FF6565;
+
+    a {
+      color: white
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.blog {
+  display: flex;
+  margin-bottom: 150px;
+
+
+  &_leftmenu {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &_general {
+      &_title {
+        margin-bottom: 20px;
+
+        span {
+          color: #FF6565;
+          font-weight: 700;
+          font-size: 32px;
+
+        }
+
+      }
+
+      &_submenu {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-size: 14px;
+          color: #343745;
+          opacity: 35%;
+          margin-bottom: 15px;
+
+          &:hover {
+            opacity: 100%;
+            cursor: pointer
+          }
+        }
+      }
+    }
+
+  }
+
+  &_rightmenu {
+    display: flex;
+    justify-content: space-between;
+
+    &_block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 30px;
+
+      &_footer {
+        display: flex;
+        justify-content: space-between;
+      }
+
+
+      &_text {
+        text-align: justify;
+      }
+
+      &:hover {
+        opacity: 80%;
+        cursor: pointer;
+      }
+    }
+
+  }
+
+}
+
+.main-page {
+  height: 466px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-image: url("/include.digital/img/test.svg");
+  margin-bottom: 100px;
+
+
+  &_title {
+    width: 800px;
+
+    span {
+
+      line-height: 48px;
+      font-size: 48px;
+      font-weight: 700;
+    }
+  }
+
+  &_services {
+    margin-bottom: 40px;
+    margin-top: 25px;
+    display: flex;
+
+    &_text {
+      line-height: 0;
+    }
+
+    img {
+      margin-left: 30px
+    }
+  }
+
+}
+
+.service-list {
+  margin-bottom: 150px;
+
+  display: flex;
+  justify-content: space-between;
+
+  &_leftmenu {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+
+
+    &_title {
+      h1 {
+        font-weight: 700;
+        font-size: 32px;
+        color: #FF6565;
+      }
+
+      margin-bottom: 30px;
+    }
+
+    &_description {
+      text-align: justify;
+
+    }
+
+  }
+
+  &_rightmenu {
+
+
+    &_block {
+
+      height: 180px;
+      width: 400px;
+      display: flex;
+      background-color: #EEF7FF;
+      justify-content: space-between;
+      background-image: url("/include.digital/img/krug.svg");
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      border-radius: 5px;
+
+      &_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &_title {
+          margin-top: 15px;
+
+          span {
+
+            font-weight: 700;
+          }
+        }
+
+        &_description {
+
+        }
+
+        &_detail {
+          margin-bottom: 15px;
+
+          span {
+            font-size: 14px
+          }
+        }
+      }
+
+      &_image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        img {
+          width: 134px;
+          height: 123px;
+        }
+      }
+
+      &:hover {
+        span {
+          color: white;
+        }
+
+        border-bottom-right-radius: 15px;
+
+        img:first-child {
+          transition: 0.5s ease;
+          margin-bottom: 10px
+        }
+
+        cursor: pointer;
+        transition: 0.5s ease;
+        background-color: #374A70;
+        background-image: url("/include.digital/img/krug3.svg");
+
+        a {
+          color: #f6545c
+        }
+
+        a:hover {
+          color: #f6545c;
+        }
+      }
+    }
+  }
+}
+
+.defaultblock {
+  display: flex;
+  margin-bottom: 150px;
+
+  &_leftmenu {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+
+    &_title {
+      h1 {
+        font-weight: 700;
+        font-size: 32px;
+        color: #FF6565;
+      }
+
+      margin-bottom: 30px;
+    }
+
+    &_description {
+
+    }
+  }
+
+  &_rightmenu {
+
+    &_item {
+      height: 180px;
+      width: 400px;
+      display: flex;
+      background-color: #EEF7FF;
+      justify-content: space-between;
+      background-image: url("/include.digital/img/krug.svg");
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      border-radius: 5px;
+
+      &_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &_title {
+          margin-top: 15px;
+
+          span {
+
+            font-weight: 700;
+          }
+        }
+
+        &_description {
+        }
+
+        &_detail {
+          margin-bottom: 15px;
+
+          span {
+            font-size: 14px
+          }
+        }
+
+      }
+
+      &_image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        img {
+          width: 134px;
+          height: 123px;
+        }
+      }
+
+      &:hover {
+        span {
+          color: white;
+        }
+
+        border-bottom-right-radius: 15px;
+
+        img:first-child {
+          transition: 0.5s ease;
+          margin-bottom: 10px
+        }
+
+        cursor: pointer;
+        transition: 0.5s ease;
+        background-color: #374A70;
+        background-image: url("/include.digital/img/krug3.svg");
+
+        a {
+          color: #f6545c
+        }
+
+        a:hover {
+          color: #f6545c;
+        }
+      }
+    }
+  }
+}
+
+
+.feedback {
+  display: flex;
+  margin-bottom: 100px;
+
+  ::-webkit-input-placeholder {
+    text-align: center
+  }
+
+
+  &_leftmenu {
+    display: flex;
+
+    span {
+      color: #FF6565;
+      font-weight: 700;
+      font-size: 32px;
+
+    }
+  }
+
+  &_form {
+
+
+    input[type=text] {
+      border: none;
+      border-bottom: 1px solid #343745;;
+      background-color: transparent;
+      outline: none;
+      width: 218px;
+      height: 51px;
+      margin-right: 10px
+    }
+
+    input:last-child {
+      width: 445px;
+      height: 100px;
+    }
+
+    width: 445px;
+    height: 384px;
+    line-height: 16px;
+    text-align: justify;
+
+    &_checkblock {
+      margin-bottom: 20px;
+    }
+
+    &_button {
+
+      width: 455px;
+      height: 50px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      line-height: 17px;
+      background-color: #FF6565;
+    }
+  }
+
+  &_rightblock {
+
+
+    &_map {
+      margin-bottom: 35px;
+
+      img {
+        width: 350px;
+        height: 173px;
+      }
+    }
+
+    &_contact {
+      font-size: 16px;
+    }
+
+
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  height: 457px;
+  background: #374A70;
+
+
+  &_logo {
+    margin-top: 100px;
+  }
+
+  &_item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+
+    &_title {
+      margin-bottom: 30px;
+
+      span {
+        font-size: 18px;
+        color: #FFFFFF;
+        font-weight: 700;
+      }
+    }
+
+    &_li {
+      line-height: 20px;
+
+      p {
+        color: white;
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+
+        a:hover {
+          cursor: pointer;
+          font-size: 18px;
+          transition: 0.2s;
+        }
+
+      }
+    }
+
+  }
+}
+
+.sites {
+  display: flex;
+  margin-bottom: 150px;
+
+  &_leftmenu {
+
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &_general {
+      &_title {
+        margin-bottom: 20px;
+
+        span {
+          color: #FF6565;
+          font-weight: 700;
+          font-size: 32px;
+        }
+
+      }
+
+      &_submenu {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-size: 14px;
+          color: #343745;
+          opacity: 35%;
+          margin-bottom: 15px;
+
+          &:hover {
+            transition: .5s ease;
+            font-size: 18px;
+            opacity: 100%;
+            cursor: pointer;
+            font-weight: 600;
+
+          }
+        }
+      }
+
+    }
+  }
+
+  &_rightmenu {
+    padding-right: 0;
+    padding-left: 0;
+
+    &_block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 5px;
+
+      &_image {
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &_text {
+        margin-bottom: 15px;
+        color: white;
+      }
+
+      &:hover {
+        opacity: 80%;
+        cursor: pointer;
+        transition: 1s ease;
+      }
+    }
+  }
+}
+
+.ads {
+  display: flex;
+  margin-bottom: 150px;
+
+  &_rightmenu {
+    padding-right: 0;
+    padding-left: 0;
+
+    &_block {
+      justify-content: space-between;
+      display: flex;
+      height: 200px;
+      background: #EEF7FF;
+      border-radius: 5px;
+
+      &_image {
+        position: absolute;
+        top: 40%;
+        left: 36%;
+      }
+
+      &_text {
+        position: absolute;
+        bottom: 10px;
+        margin-left: 10px;
+
+      }
+
+
+      &:hover {
+        background: #374A70;
+
+        a {
+          color: white;
+        }
+
+        svg {
+          path {
+            fill: white;
+          }
+        }
+
+        fill: white;
+      }
+
+    }
+  }
+}
+
+&_leftmenu {
+
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+  &_general {
+    &_title {
+      margin-bottom: 20px;
+
+      span {
+        color: #FF6565;
+        font-weight: 700;
+        font-size: 32px;
+
+      }
+
+    }
+
+    &_submenu {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-size: 14px;
+        color: #343745;
+        opacity: 35%;
+        margin-bottom: 15px;
+
+        &:hover {
+          transition: .5s ease;
+          font-size: 18px;
+          opacity: 100%;
+          cursor: pointer;
+          font-weight: 600;
+
+        }
+      }
+    }
+
+  }
+}
+
+}
+
+// -------------------------
+// Готовые блоки для верстки
+// -------------------------
+&_rightmenu {
+  &_block {
+
+    background: #8A223B;
+
+    &_text {
+      color: white;
+    }
+  }
+}
+
+&_leftmenu {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &_general {
+    &_title {
+      margin-bottom: 20px;
+
+      span {
+        color: #FF6565;
+        font-weight: 700;
+        font-size: 32px;
+
+      }
+
+    }
+
+    &_submenu {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-size: 14px;
+        color: #343745;
+        opacity: 35%;
+        margin-bottom: 15px;
+
+        &:hover {
+          transition: .5s ease;
+          font-size: 18px;
+          opacity: 100%;
+          cursor: pointer;
+          font-weight: 600;
+
+        }
+      }
+    }
+
+  }
+}
+
