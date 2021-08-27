@@ -75,7 +75,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url("/include-1.digital/img/bg.svg");
+  background-image: url("/include.digital/img/bg.svg");
   margin-bottom: 40px;
 }
 .homemain-page_textblock_title {
@@ -458,7 +458,7 @@
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  background-image: url("../img/bg.svg");
+  background-image: url("/include.digital/img/bg.svg");
   margin-bottom: 150px;
 }
 .main-page_title {
@@ -507,7 +507,7 @@
   display: flex;
   background-color: #EEF7FF;
   justify-content: space-between;
-  background-image: url("/include-1.digital/img/krug.svg");
+  background-image: url("/include.digital/img/krug.svg");
   background-repeat: no-repeat;
   background-position: right bottom;
   border-radius: 5px;
@@ -543,7 +543,7 @@
   cursor: pointer;
   transition: 0.5s ease;
   background-color: #374A70;
-  background-image: url("/include-1.digital/img/krug3.svg");
+  background-image: url("/include.digital/img/krug3.svg");
 }
 .service-list_rightmenu_block:hover span {
   color: white;
@@ -767,6 +767,7 @@
   padding-left: 0;
 }
 .sites_rightmenu_block {
+  opacity: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -782,7 +783,7 @@
   color: white;
 }
 .sites_rightmenu_block:hover {
-  opacity: 80%;
+  opacity: 100%;
   cursor: pointer;
   transition: 1s ease;
 }
@@ -795,57 +796,91 @@
   padding-left: 0;
 }
 .ads_rightmenu_block {
-  justify-content: space-between;
   display: flex;
   height: 200px;
   background: #EEF7FF;
   border-radius: 5px;
+  flex-direction: column;
+  justify-content: center;
+}
+.ads_rightmenu_block:hover {
+  cursor: pointer;
+}
+.ads_rightmenu_block:hover img {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
+  /* IE 6-9 */
+}
+.ads_rightmenu_block:hover a {
+  color: #FF6565;
+}
+.ads_rightmenu_block:hover svg path {
+  fill: #FF6565;
 }
 .ads_rightmenu_block_image {
   position: absolute;
-  top: 40%;
-  left: 36%;
+  left: 32%;
+}
+.ads_rightmenu_block_image img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  /*конец кода с transition*/
 }
 .ads_rightmenu_block_text {
   position: absolute;
   bottom: 10px;
   margin-left: 10px;
 }
-.ads_rightmenu_block:hover {
-  background: #374A70;
-  fill: white;
+.ads_rightmenu_block_text a:hover {
+  cursor: pointer;
+  color: #FF6565 !important;
 }
-.ads_rightmenu_block:hover a {
-  color: white;
+.ads_rightmenu_block_text:hover svg path {
+  fill: #FF6565 !important;
 }
-.ads_rightmenu_block:hover svg path {
-  fill: white;
+.ads_rightmenu_block img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  /* IE 6-9 */
+  /*Добавим вот такой вот код*/
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
-_leftmenu {
+.ads_leftmenu {
   padding-left: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-_leftmenu_general_title {
+.ads_leftmenu_general_title {
   margin-bottom: 20px;
 }
-_leftmenu_general_title span {
+.ads_leftmenu_general_title span {
   color: #FF6565;
   font-weight: 700;
   font-size: 32px;
 }
-_leftmenu_general_submenu {
+.ads_leftmenu_general_submenu {
   display: flex;
   flex-direction: column;
 }
-_leftmenu_general_submenu span {
+.ads_leftmenu_general_submenu span {
   font-size: 14px;
   color: #343745;
   opacity: 35%;
   margin-bottom: 15px;
 }
-_leftmenu_general_submenu span:hover {
+.ads_leftmenu_general_submenu span:hover {
   transition: 0.5s ease;
   font-size: 18px;
   opacity: 100%;

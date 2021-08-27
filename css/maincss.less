@@ -96,7 +96,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-image: url("/include-1.digital/img/bg.svg");
+    background-image: url("/include.digital/img/bg.svg");
     margin-bottom: 40px;
 
 
@@ -626,7 +626,7 @@
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  background-image: url("../img/bg.svg");
+  background-image: url("/include.digital/img/bg.svg");
   margin-bottom: 150px;
 
 
@@ -696,7 +696,7 @@
       display: flex;
       background-color: #EEF7FF;
       justify-content: space-between;
-      background-image: url("/include-1.digital/img/krug.svg");
+      background-image: url("/include.digital/img/krug.svg");
       background-repeat: no-repeat;
       background-position: right bottom;
       border-radius: 5px;
@@ -754,7 +754,7 @@
         cursor: pointer;
         transition: 0.5s ease;
         background-color: #374A70;
-        background-image: url("/include-1.digital/img/krug3.svg");
+        background-image: url("/include.digital/img/krug3.svg");
 
         a {
           color: #f6545c
@@ -1054,6 +1054,7 @@
     padding-left: 0;
 
     &_block {
+      opacity: 80%;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -1073,7 +1074,7 @@
       }
 
       &:hover {
-        opacity: 80%;
+        opacity: 100%;
         cursor: pointer;
         transition: 1s ease;
       }
@@ -1089,17 +1090,55 @@
     padding-right: 0;
     padding-left: 0;
 
+
     &_block {
-      justify-content: space-between;
       display: flex;
       height: 200px;
       background: #EEF7FF;
       border-radius: 5px;
+      flex-direction: column;
+      justify-content: center;
+
+      &:hover {
+
+        img {
+          -webkit-filter: none;
+          -moz-filter: none;
+          -ms-filter: none;
+          -o-filter: none;
+          filter: none;
+          filter: none; /* IE 6-9 */
+        }
+
+        a {
+          color: #FF6565
+        }
+
+        svg {
+          path {
+            fill: #FF6565
+          }
+        }
+
+        cursor: pointer;
+      }
+
+      img:hover {
+      }
 
       &_image {
         position: absolute;
-        top: 40%;
-        left: 36%;
+        left: 32%;
+
+        img {
+          width: 170px;
+          height: 170px;
+          object-fit: cover;
+
+          /*конец кода с transition*/
+        }
+
+
       }
 
       &_text {
@@ -1107,71 +1146,82 @@
         bottom: 10px;
         margin-left: 10px;
 
-      }
-
-
-      &:hover {
-        background: #374A70;
-
         a {
-          color: white;
-        }
-
-        svg {
-          path {
-            fill: white;
+          &:hover {
+            cursor: pointer;
+            color: #FF6565 !important;
           }
         }
 
-        fill: white;
-      }
-
-    }
-  }
-}
-
-&_leftmenu {
-
-  padding-left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-
-  &_general {
-    &_title {
-      margin-bottom: 20px;
-
-      span {
-        color: #FF6565;
-        font-weight: 700;
-        font-size: 32px;
-
-      }
-
-    }
-
-    &_submenu {
-      display: flex;
-      flex-direction: column;
-
-      span {
-        font-size: 14px;
-        color: #343745;
-        opacity: 35%;
-        margin-bottom: 15px;
-
         &:hover {
-          transition: .5s ease;
-          font-size: 18px;
-          opacity: 100%;
-          cursor: pointer;
-          font-weight: 600;
-
+          svg {
+            path {
+              fill: #FF6565 !important;
+            }
+          }
         }
       }
+
+      img {
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+        filter: gray; /* IE 6-9 */
+        /*Добавим вот такой вот код*/
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+      }
     }
 
+  }
+
+  &_leftmenu {
+
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    &_general {
+      &_title {
+        margin-bottom: 20px;
+
+        span {
+          color: #FF6565;
+          font-weight: 700;
+          font-size: 32px;
+
+        }
+
+      }
+
+      &_submenu {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-size: 14px;
+          color: #343745;
+          opacity: 35%;
+          margin-bottom: 15px;
+
+          &:hover {
+            transition: .5s ease;
+            font-size: 18px;
+            opacity: 100%;
+            cursor: pointer;
+            font-weight: 600;
+
+          }
+        }
+      }
+
+    }
   }
 }
 
