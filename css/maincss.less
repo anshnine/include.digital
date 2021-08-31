@@ -346,97 +346,97 @@
 
 }
 
-.reviews {
-  height: 290px;
-  display: flex;
-  width: 1110px;
-  justify-content: space-between;
-  margin-bottom: 100px;
-
-  &_leftmenu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-
-    &_general {
-      &_title {
-        margin-bottom: 20px;
-
-        span {
-          color: #FF6565;
-          font-weight: 700;
-          font-size: 32px;
-        }
-      }
-
-      &_submenu {
-        display: flex;
-        flex-direction: column;
-
-        span {
-          font-size: 14px;
-          color: #343745;
-          opacity: 35%;
-          margin-bottom: 15px;
-
-          &:hover {
-            opacity: 100%;
-            cursor: pointer
-          }
-        }
-      }
-    }
-  }
-
-  &_rightmenu {
-
-    display: flex;
-    width: 825px;
-
-    &_block {
-      height: 290px;
-      background-color: #EEF7FF;
-
-      &_header {
-        display: flex;
-        align-items: center;
-        margin-left: 15px;
-
-        &_photo {
-          width: 60px;
-          height: 60px;
-        }
-
-        &_name {
-          margin-left: 10px;
-        }
-      }
-
-      &_body {
-        width: 310px;
-        height: 110px;
-        margin-left: 15px;
-      }
-
-      &_footer {
-        margin-left: 15px;
-      }
-
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      margin-right: 23px;
-      border-radius: 5px;
-      margin-bottom: 20px;
-
-    }
-
-
-  }
-
-
-}
+//.reviews {
+//  height: 290px;
+//  display: flex;
+//  width: 1110px;
+//  justify-content: space-between;
+//  margin-bottom: 100px;
+//
+//  &_leftmenu {
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: space-between;
+//
+//
+//    &_general {
+//      &_title {
+//        margin-bottom: 20px;
+//
+//        span {
+//          color: #FF6565;
+//          font-weight: 700;
+//          font-size: 32px;
+//        }
+//      }
+//
+//      &_submenu {
+//        display: flex;
+//        flex-direction: column;
+//
+//        span {
+//          font-size: 14px;
+//          color: #343745;
+//          opacity: 35%;
+//          margin-bottom: 15px;
+//
+//          &:hover {
+//            opacity: 100%;
+//            cursor: pointer
+//          }
+//        }
+//      }
+//    }
+//  }
+//
+//  &_rightmenu {
+//
+//    display: flex;
+//    width: 825px;
+//
+//    &_block {
+//      height: 290px;
+//      background-color: #EEF7FF;
+//
+//      &_header {
+//        display: flex;
+//        align-items: center;
+//        margin-left: 15px;
+//
+//        &_photo {
+//          width: 60px;
+//          height: 60px;
+//        }
+//
+//        &_name {
+//          margin-left: 10px;
+//        }
+//      }
+//
+//      &_body {
+//        width: 310px;
+//        height: 110px;
+//        margin-left: 15px;
+//      }
+//
+//      &_footer {
+//        margin-left: 15px;
+//      }
+//
+//      display: flex;
+//      flex-direction: column;
+//      justify-content: space-around;
+//      margin-right: 23px;
+//      border-radius: 5px;
+//      margin-bottom: 20px;
+//
+//    }
+//
+//
+//  }
+//
+//
+//}
 
 .capture-form {
   width: 100%;
@@ -1037,7 +1037,7 @@
 
           &:hover {
             transition: .5s ease;
-            font-size: 18px;
+
             opacity: 100%;
             cursor: pointer;
             font-weight: 600;
@@ -1168,7 +1168,6 @@
         -ms-filter: grayscale(100%);
         -o-filter: grayscale(100%);
         filter: grayscale(100%);
-        filter: gray; /* IE 6-9 */
         /*Добавим вот такой вот код*/
         -webkit-transition: all 0.5s;
         -moz-transition: all 0.5s;
@@ -1225,6 +1224,127 @@
   }
 }
 
+.stuff {
+  display: flex;
+  margin-bottom: 150px;
+  justify-content: space-between;
+
+  &_leftmenu {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &_general {
+      &_title {
+        margin-bottom: 20px;
+
+        span {
+          color: #FF6565;
+          font-weight: 700;
+          font-size: 32px;
+
+        }
+
+      }
+
+      &_submenu {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-size: 14px;
+          color: #343745;
+          opacity: 35%;
+          margin-bottom: 15px;
+
+          &:hover {
+            transition: .5s ease;
+            font-size: 18px;
+            opacity: 100%;
+            cursor: pointer;
+            font-weight: 600;
+
+          }
+        }
+      }
+
+    }
+  }
+
+  &_rightmenu {
+    display: flex;
+    flex-wrap: wrap;
+
+    &_block {
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      height: 200px;
+      width: 450px;
+      background-image: url("/include.digital/img/img_4.png");
+      background-position: center;
+      background-size: cover;
+      opacity: 80%;
+
+      &_fio {
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        line-height: 15px;
+
+        span {
+          color: white !important;
+        }
+      }
+
+      &_position {
+        font-weight: 700;
+
+        span {
+          color: white !important;
+        }
+      }
+
+      &:hover {
+        opacity: 100%;
+        transition: .5s ease;
+        cursor: pointer;
+
+      }
+
+    }
+  }
+}
+
+.reviews {
+  display: flex;
+
+  &_rightmenu {
+
+
+    &_block {
+
+      background: #EEF7FF;
+      display: flex;
+      flex-direction: column;
+
+      &_header {
+        display: flex;
+
+      }
+
+      &_body {
+      }
+
+      &_footer {
+
+      }
+
+    }
+  }
+}
 
 // -------------------------
 // Готовые блоки для верстки
