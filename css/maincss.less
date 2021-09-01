@@ -1325,23 +1325,76 @@
 
 
     &_block {
-
+      border-radius: 5px;
       background: #EEF7FF;
       display: flex;
       flex-direction: column;
 
       &_header {
         display: flex;
+        align-items: center;
 
+        &_person {
+
+          display: flex;
+          flex-direction: column;
+        }
       }
 
       &_body {
+        display: flex;
+        margin-top: 37px;
+        width: 310px;
       }
 
       &_footer {
-
+        margin-top: 30px;
       }
 
+    }
+
+    &_letter {
+      border-radius: 5px;
+      background: #FF6565;
+      display: flex;
+      flex-direction: column;
+
+
+      &_title {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 37px;
+
+        &_logo {
+
+          img {
+            width: 141px;
+          }
+        }
+
+        &_name {
+          span {
+            color: white;
+          }
+        }
+      }
+
+      &_text {
+
+
+        span {
+          color: #FFFFFF
+        }
+
+        margin-bottom: 96px;
+      }
+
+      &_action {
+        a {
+          text-decoration: none;
+          color: #FFFFFF
+        }
+      }
     }
   }
 }
