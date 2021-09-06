@@ -1,0 +1,15 @@
+* {
+  margin: 0 0 0 0;
+  font-family: "Montserrat", sans-serif;
+  color: #374A70;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.footer {
+  background: #374A70;
+}
+.footer_block span,
+.footer_block a {
+  color: white !important;
+}
+/*# sourceMappingURL=style.css.map */

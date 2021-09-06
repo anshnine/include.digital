@@ -1,50 +1,36 @@
 function displaylogo() {
+//<544 xs || >=544 sM|| >=768 md || >=992 lg|| >=1200 xl
+
+    if ($(window).width() < 1200) {
+        $("#footer_logo").attr("src", "/img/footer_logo_sm.svg"); // small logo
+    } else {
+        $("#footer_logo").attr("src", "/img/footer__logo.svg"); //big logo
+    }
 
     if ($(window).width() < 992) {
-        $('.footer_logo').detach();
+        $("#footer_logo").addClass('d-none');
+    } else {
+        $("#footer_logo").removeClass('d-none');
+
     }
 
-    if ($(window).width() <= 544) {
-        $('#law').detach();
-        $('#services').detach();
-        $('#contacts').addClass('text-center')
-    }
+    if ($(window).width() < 768) {
+        $("#law").addClass('d-none');
+    } else $("#law").removeClass('d-none ');
+    if ($(window).width() < 576) {
+        if ($("#li_logo").length === 0) {
+            $("#contacts").addClass('text-center').append('<img id="li_logo" src="/img/footer_logo_sm.svg" alt="">');
+        } // small logo
+    } else {
 
-
-    if ($(window).width() >= 992) {
-        if ($('.footer_logo').length === 0) {
-            $('#footer_block').prepend(' <div class="footer_logo col-xl-3 col-lg-2 col-md-4 col-sm-3 col-xs-1" id="gooter"><img src="" id="footer_logo" alt=""></div>');
-        }
-        if ($('#law').length === 0) {
-            $('#gooter').after(' <div class="footer_block col-xl-3  col-md-3 col-sm-2 col-xs-2" id="law">\n' +
-                '                    <div class="footer_block_title font-weight-bold">\n' +
-                '                        <span>Правовая часть</span>\n' +
-                '                    </div>\n' +
-                '                </div>');
-        }
-        if ($('#services').length === 0) {
-            $('#law').after('  <div class="footer_block col-xl-3  col-md-3 col-sm-2 col-xs-2" id="services">\n' +
-                '                    <div class="footer_block_title  font-weight-bold">\n' +
-                '                        <span>Правовая часть</span>\n' +
-                '                    </div>\n' +
-                '                </div>');
-        }
-        if ($(window).width() < 1200) {
-            $("#footer_logo").attr("src", "/img/footer_logo_sm.svg"); // small logo
-        } else {
-            $("#footer_logo").attr("src", "/img/footer__logo.svg"); //big logo
-        }
+        $("#li_logo").detach();
     }
 }
 
 
-
-
 $(window).resize(function () {
-
     displaylogo();
 });
 $(document).ready(function () {
-
     displaylogo();
 });
