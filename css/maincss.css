@@ -623,41 +623,10 @@
   font-size: 16px;
 }
 .footer {
-  display: flex;
-  justify-content: center;
-  height: 457px;
   background: #374A70;
 }
-.footer_logo {
-  margin-top: 100px;
-}
-.footer_item {
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-}
-.footer_item_title {
-  margin-bottom: 30px;
-}
-.footer_item_title span {
-  font-size: 18px;
-  color: #FFFFFF;
-  font-weight: 700;
-}
-.footer_item_li {
-  line-height: 20px;
-}
-.footer_item_li p {
-  color: white;
-}
-.footer_item_li p a {
-  color: white;
-  text-decoration: none;
-}
-.footer_item_li p a:hover {
-  cursor: pointer;
-  font-size: 18px;
-  transition: 0.2s;
+.footer_block span {
+  color: white !important;
 }
 .sites {
   display: flex;
