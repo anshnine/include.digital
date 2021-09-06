@@ -12,4 +12,11 @@
 .footer_block a {
   color: white !important;
 }
+.header_button {
+  border-radius: 5px;
+  background: #FF6565;
+}
+.header_button span {
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */
