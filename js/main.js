@@ -1,9 +1,9 @@
 function displaylogo() {
 
-    if ($(window).width() < 993) {
+    if ($(window).width() < 992) {
         $('.footer_logo').detach();
-
     }
+
     if ($(window).width() <= 544) {
         $('#law').detach();
         $('#services').detach();
@@ -11,7 +11,7 @@ function displaylogo() {
     }
 
 
-    if ($(window).width() >= 993) {
+    if ($(window).width() >= 992) {
         if ($('.footer_logo').length === 0) {
             $('#footer_block').prepend(' <div class="footer_logo col-xl-3 col-lg-2 col-md-4 col-sm-3 col-xs-1" id="gooter"><img src="" id="footer_logo" alt=""></div>');
         }
