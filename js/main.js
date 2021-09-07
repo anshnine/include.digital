@@ -9,11 +9,14 @@ function displaylogo() {
         $("#footer_logo").attr("src", "/img/footer__logo.svg"); //big logo
     }
 
+
     if ($(window).width() < 992) {
+        $("#header_logo").attr("src", "/img/header__logo.svg"); // big logo
         $("#footer_logo").addClass('d-none');
+        $("#logohref").addClass('text-center');
     } else {
         $("#footer_logo").removeClass('d-none');
-
+        $("#logohref").removeClass('text-center');
     }
 
     if ($(window).width() < 768) {
@@ -29,6 +32,7 @@ function displaylogo() {
         $("#services").removeClass('d-none');
         $("#li_logo").detach();
     }
+
 }
 
 
@@ -38,3 +42,9 @@ $(window).resize(function () {
 $(document).ready(function () {
     displaylogo();
 });
+
+/*=====================================================*/
+/*=============CARUSEL=================================*/
+/*=====================================================*/
+
+

@@ -1,10 +1,92 @@
+/***************************************************************
+=================Общие классы==================================
+***************************************************************/
 * {
   margin: 0 0 0 0;
-  font-family: "Montserrat", sans-serif;
-  color: #374A70;
+  font-family: "Montserrat", sans-serif !important;
+  color: #374A70 !important;
   font-size: 16px;
   box-sizing: border-box;
 }
+.menuLimiter {
+  width: 100%;
+  /* Зададим возможность горизонтальной прокрутки */
+  overflow-x: scroll;
+  /* Для Сафари дополнительно зададим инерцию при прокрутке.
+  С инерцией меню будет «оттягиваться» при попытке прокрутить
+  его за его пределы. */
+  -webkit-overflow-scrolling: touch;
+}
+.colred {
+  color: #FF6565 !important;
+}
+#f14 span {
+  font-size: 14px;
+}
+#leftmenu_title_column {
+  font-size: 16px;
+}
+.b-red {
+  background: #FF6565;
+}
+.b-red-hover:hover {
+  color: #FF6565 !important;
+}
+.b-blue {
+  background: #374A70;
+}
+.mb-150 {
+  margin-bottom: 150px;
+}
+.mb-100 {
+  margin-bottom: 100px;
+}
+.mb-73 {
+  margin-bottom: 73px;
+}
+.mb-250 {
+  margin-top: 250px;
+}
+.redarrow {
+  margin-left: 5px;
+}
+/***************************************************************
+=================Общие классы END==============================
+***************************************************************/
+/***************************************************************
+=================CARUSEL==============================
+***************************************************************/
+#slide_line {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+#slide_line img {
+  width: 7.4%;
+  height: auto;
+}
+.string:hover {
+  cursor: pointer;
+}
+@media (max-width: 800px) {
+  #slide_line img {
+    width: 28%;
+    max-width: 160px;
+    margin-right: 1%;
+  }
+}
+@media (max-width: 450px) {
+  #slide_line img {
+    width: 99%;
+  }
+}
+/***************************************************************
+=================CARUSEL END==============================
+***************************************************************/
+/***************************************************************
+================BLOCKS==============================
+***************************************************************/
 .footer {
   background: #374A70;
 }
@@ -12,11 +94,100 @@
 .footer_block a {
   color: white !important;
 }
+.header {
+  background: white;
+}
 .header_button {
+  opacity: 80%;
   border-radius: 5px;
   background: #FF6565;
 }
-.header_button span {
-  color: white;
+.header_button:hover {
+  cursor: pointer;
+  opacity: 100%;
 }
+.header_button span {
+  color: white!important;
+}
+.main_block {
+  background: url("/include.digital/img/bg.svg") no-repeat;
+}
+.default_leftmenu_title span {
+  font-size: 32px;
+}
+.default_leftmenu_items span:hover {
+  transition: 0.2s ease;
+  cursor: pointer;
+  font-weight: bold;
+}
+.default_leftmenu_allservices span:hover {
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+.default_rightmenu_block {
+  display: flex;
+  background-color: #EEF7FF;
+  justify-content: space-between;
+  background-image: url("/include.digital/img/krug.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  border-radius: 5px;
+}
+.default_rightmenu_block_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.default_rightmenu_block_text_title span {
+  font-weight: 700;
+}
+.default_rightmenu_block_text_detail span {
+  font-size: 14px;
+}
+.default_rightmenu_block_image {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.default_rightmenu_block_image img {
+  width: 134px;
+  height: 123px;
+}
+.default_rightmenu_block:hover {
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  background-color: #374A70;
+  background-image: url("/include.digital/img/krug3.svg");
+}
+.default_rightmenu_block:hover span {
+  color: white!important;
+}
+.default_rightmenu_block:hover img:first-child {
+  transition: 0.5s ease;
+  margin-bottom: 10px;
+}
+.default_rightmenu_block:hover a {
+  color: #f6545c;
+}
+.default_rightmenu_block:hover a:hover {
+  color: #f6545c;
+}
+.projects_leftmenu_title span {
+  font-size: 32px;
+}
+.projects_leftmenu_items span:hover {
+  transition: 0.2s ease;
+  cursor: pointer;
+  font-weight: bold;
+}
+.projects_leftmenu_allservices span:hover {
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+/***************************************************************
+=================BLOCKS END==============================
+***************************************************************/
 /*# sourceMappingURL=style.css.map */

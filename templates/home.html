@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Кодировка веб-страницы -->
+    <meta charset="utf-8">
+    <!-- Настройка viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Include.digital</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            var marquee = $("#slide_line");
+            marquee.wrapInner("<span>");
+            marquee.find("span").css({"width": "50%", "display": "inline-block", "text-align": "center"});
+            marquee.append(marquee.find("span").clone());
+            marquee.wrapInner("<div>");
+            marquee.find("div").css("width", "200%");
+            var reset = function () {
+                if ($(window).width() <= '1200') {
+                    $(this).stop();
+                } else {
+                    $(this).css("margin-left", "0%");
+                    $(this).animate({"margin-left": "-100%"}, 9000, 'linear', reset);
+                }
+            };
+            reset.call(marquee.find("div"));
+        });
+    </script>
+    <!-- Bootstrap CSS (jsDelivr CDN) -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/js/main.js"></script>
+    <link href="/css/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
+          rel="stylesheet">
+    <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
+    <script defer src="/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<section id="header" class="mb-73">
+    <header class="header fixed-top ">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container">
+                <a id="logohref" href="/index.html"
+                   class="navbar-brand col-xl-3 col-lg-2  d-xl-flex d-lg-flex d-md-none d-sm-none d-none"><img
+                        id="header_logo" src=""
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent"
+                        aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse col-xl-6 col-lg-7" id="navContent">
+                    <ul class="navbar-nav mr-auto mb-3 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link b-red-hover">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link b-red-hover">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link b-red-hover">Проекты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link b-red-hover">Компания</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link b-red-hover"> Блог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link b-red-hover"> Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="header_button d-sm-flex d-md-flex d-lg-none d-xl-none d-flex justify-content-center align-items-center col-md-3 col-sm-3 "
+                         id="header_button_collapse">
+                        <span class="pb-3 pt-3 text-center">Обсудить проект</span></div>
+                </div>
+                <div class="header_button d-lg-flex d-xl-flex d-sm-none d-md-none d-none justify-content-center align-items-center col-xl-3 col-lg-3 "
+                     id="header_button">
+                    <span class="pr-5 pl-5 pb-3 pt-3 text-center">Обсудить проект</span></div>
+            </div>
+        </nav>
+    </header>
+</section>
+<section id="main" class="mb-150">
+    <div class="container">
+        <div class="main d-flex flex-column">
+            <div class="main_block d-flex justify-content-end flex-column">
+                <div class="main_block_title col-xl-11 col-lg-10 col-md-10 col-sm-10 col-xs-2 mb-3 mb-250"
+                     id="main-title">
+                    <h1 class="font-weight-bold">ИНТЕГРАЦИЯ ИНФОРМАЦИОННЫХ СИСТЕМ В ВАШ БИЗНЕС</h1>
+                </div>
+                <div class="main_block_subtitle col-xl-4 col-xs-2 mb-5">
+                    <p>Команда профессионалов для решения задач вашего бизнеса</p>
+                </div>
+            </div>
+            <div class="carusel d-xl-inline-block d-lg-none d-md-none d-sm-none d-none" id="slide_line">
+                <img class=" mr-5" src="/img/carusel_item.svg" alt="Картинка1">
+                <img class=" mr-5" src="/img/carusel_item.svg" alt="Картинка1">
+                <img class=" mr-5" src="/img/carusel_item.svg" alt="Картинка1">
+                <img class=" mr-5" src="/img/carusel_item.svg" alt="Картинка1">
+                <img class=" mr-5" src="/img/carusel_item.svg" alt="Картинка1">
+                <img class=" mr-5" src="/img/carusel_item.svg" alt="Картинка1">
+                <img class=" mr-5" src="/img/carusel_item.svg" alt="Картинка1">
+                <img class=" mr-5" src="/img/carusel_item.svg" alt="Картинка1">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="directions" class="mb-150">
+    <div class="container">
+        <div class="default d-xl-flex d-lg-flex d-md-none d-sm-none d-none" id="leftmenu_column">
+            <div class="row">
+                <div class="default_leftmenu col-xl-3 col-lg-3 d-flex justify-content-between flex-column ">
+                    <div class="wrapper d-flex flex-column">
+                        <div class="default_leftmenu_title mb-4 ">
+                            <span class="font-weight-bold colred" id="leftmenu_title">Направления</span>
+                        </div>
+                        <div class="default_leftmenu_items d-flex flex-column">
+                            <span class="mb-2">Популярные услуги</span>
+                            <span class="mb-2">Разработка сайтов</span>
+                            <span class="mb-2">Техническое ведение сайтов</span>
+                            <span class="mb-2">SEO продвижение</span>
+                        </div>
+                    </div>
+                    <div class="default_leftmenu_allservices"><span>Все услуги </span>
+                        <img class="redarrow" src="/img/Vector.svg" alt="">
+                    </div>
+                </div>
+                <div class="default_rightmenu col-xl-9 col-lg-9">
+                    <div class="row justify-content-center">
+                        <div class="default_rightmenu_block col-xl-5  col-lg-5 mr-4 mb-4">
+                            <div class="default_rightmenu_block_text ">
+
+                                <div class="defaultblock_rightmenu_item_text_title  mt-3 mb-3">
+                                    <span class="font-weight-bold">Корпоративные сайты</span>
+                                </div>
+
+                                <div class="defaultblock_rightmenu_item_text_description mb-3">
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                </div>
+
+                                <div class="defaultblock_rightmenu_item_text_detail mb-3  ">
+                                    <span>Подробнее</span><img class="redarrow" src="img/Vector.svg" alt="">
+                                </div>
+
+
+                            </div>
+                            <div class="default_rightmenu_block_image">
+                                <img src="/img/pic.png" alt="">
+                            </div>
+                        </div>
+                        <div class="default_rightmenu_block col-xl-5 mb-4 col-lg-5">
+                            <div class="default_rightmenu_block_text ">
+
+                                <div class="defaultblock_rightmenu_item_text_title  mt-3 mb-3">
+                                    <span class="font-weight-bold">Корпоративные сайты</span>
+                                </div>
+
+                                <div class="defaultblock_rightmenu_item_text_description mb-3">
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                </div>
+
+                                <div class="defaultblock_rightmenu_item_text_detail mb-3  ">
+                                    <span>Подробнее</span><img class="redarrow" src="img/Vector.svg" alt="">
+                                </div>
+
+
+                            </div>
+                            <div class="default_rightmenu_block_image">
+                                <img src="/img/pic.png" alt="">
+                            </div>
+                        </div>
+                        <div class="default_rightmenu_block col-xl-5 mr-4 col-lg-5">
+                            <div class="default_rightmenu_block_text ">
+
+                                <div class="defaultblock_rightmenu_item_text_title  mt-3 mb-3">
+                                    <span class="font-weight-bold">Корпоративные сайты</span>
+                                </div>
+
+                                <div class="defaultblock_rightmenu_item_text_description mb-3">
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                </div>
+
+                                <div class="defaultblock_rightmenu_item_text_detail mb-3  ">
+                                    <span>Подробнее</span><img class="redarrow" src="img/Vector.svg" alt="">
+                                </div>
+
+
+                            </div>
+                            <div class="default_rightmenu_block_image">
+                                <img src="/img/pic.png" alt="">
+                            </div>
+                        </div>
+                        <div class="default_rightmenu_block col-xl-5 col-lg-5">
+                            <div class="default_rightmenu_block_text ">
+
+                                <div class="defaultblock_rightmenu_item_text_title  mt-3 mb-3">
+                                    <span class="font-weight-bold">Корпоративные сайты</span>
+                                </div>
+
+                                <div class="defaultblock_rightmenu_item_text_description mb-3">
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                </div>
+
+                                <div class="defaultblock_rightmenu_item_text_detail mb-3  ">
+                                    <span>Подробнее</span><img class="redarrow" src="img/Vector.svg" alt="">
+                                </div>
+
+
+                            </div>
+                            <div class="default_rightmenu_block_image">
+                                <img src="/img/pic.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="default d-xl-none d-lg-none" id="leftmenu_row">
+            <div class="row flex-column ">
+                <div class="default_leftmenu_title mb-4 ">
+                    <span class="font-weight-bold colred ml-3" id="leftmenu_title_column">Направления</span>
+                </div>
+                <div class="menuLimiter ">
+                    <div class="default_leftmenu_items d-sm-flex d-md-flex justify-content-between" id="f14">
+                        <span class="mb-2  col-3">Популярные услуги</span>
+                        <span class="mb-2  col-3" id="1">Разработка сайтов</span>
+                        <span class="mb-2  col-3">Техническое ведение сайтов</span>
+                        <span class="mb-2  col-3">Популярные услуги</span>
+                        <span class="mb-2  col-3">Разработка сайтов</span>
+                        <span class="mb-2  col-3">Техническое ведение сайтов</span>
+                        <span class="mb-2  col-3">Популярные услуги</span>
+                        <span class="mb-2  col-3">Разработка сайтов</span>
+                        <span class="mb-2  col-3">Техническое ведение сайтов</span>
+                        <span class="mb-2 mr-0 col-3">SEO продвижение</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="projects">
+    <div class="container">
+
+        <div class="projects d-xl-flex d-lg-flex d-md-none d-sm-none d-none" id="projecs_leftmenu_column">
+            <div class="row">
+                <div class="projects_leftmenu col-xl-3 col-lg-3 d-flex justify-content-between flex-column ">
+                    <div class="wrapper d-flex flex-column">
+                        <div class="projects_leftmenu_title mb-4 ">
+                            <span class="font-weight-bold colred" id="projects_leftmenu_title">Проекты</span>
+                        </div>
+                        <div class="projects_leftmenu_items d-flex flex-column">
+                            <span class="mb-2">Популярные услуги</span>
+                            <span class="mb-2">Разработка сайтов</span>
+                            <span class="mb-2">Техническое ведение сайтов</span>
+                            <span class="mb-2">SEO продвижение</span>
+                        </div>
+                    </div>
+                    <div class="default_leftmenu_allservices"><span>Все услуги </span>
+                        <img class="redarrow" src="/img/Vector.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<section id="footer">
+    <footer class="footer pt-5">
+        <div class="container ">
+            <div class="row d-flex" id="footer_block">
+                <div class="footer_logo mr-5"><img id="footer_logo" src="" alt=""></div>
+                <div class="footer_block col-xl-3  col-md-3 col-sm-3 col-xs-3 " id="law">
+                    <div class="footer_block_title font-weight-bold mb-4">
+                        <span>Правовая часть</span>
+                    </div>
+                    <div class="footer_block_li d-flex flex-column">
+                        <a class="mb-2" href="">Обработка персональных данных</a>
+                        <a class="mb-2" href="">Правила пользования сайтом</a>
+                        <a class="mb-2" href="">Какой-то хэштаг</a>
+                    </div>
+                </div>
+                <div class="footer_block col-xl-3  col-md-3 col-sm-3 col-xs-3 " id="services">
+                    <div class="footer_block_title font-weight-bold mb-4">
+                        <span>Услуги</span>
+                    </div>
+                    <div class="footer_block_li d-flex flex-column">
+                        <a class="mb-2" href="">Разработка сайтов</a>
+                        <a class="mb-2" href="">Разработка интернет магазинов</a>
+                        <a class="mb-2" href="">Разработка лендинг пейджей</a>
+                    </div>
+                </div>
+                <div class="footer_block col-xl-3  col-md-3 col-sm-3 col-xs-3" id="contacts">
+                    <div class="footer_block_title font-weight-bold mb-4">
+                        <span>Контакты</span>
+                    </div>
+                    <div class="footer_block_li d-flex flex-column">
+                        <a class="mb-2" href="">888855541414</a>
+                        <a class="mb-2" href="">VK3333asd@gmail.com</a>
+                        <a class="mb-2" href="">orenburg</a>
+                        <a class="mb-2" href="">vk <img src="/img/arrow.svg" alt=""></a>
+                        <a class="mb-2" href="">instagrama <img src="/img/arrow.svg" alt=""></a>
+                        <a class="mb-2" href="">facebooka <img src="/img/arrow.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+</body>
+</html>
