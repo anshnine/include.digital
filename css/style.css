@@ -107,13 +107,13 @@
   opacity: 100%;
 }
 .header_button span {
-  color: white!important;
+  color: white !important;
 }
 .main_block {
   background: url("/include.digital/img/bg.svg") no-repeat;
 }
 .default_leftmenu_title span {
-  font-size: 32px;
+  font-size: 28px;
 }
 .default_leftmenu_items span:hover {
   transition: 0.2s ease;
@@ -162,7 +162,7 @@
   background-image: url("/include.digital/img/krug3.svg");
 }
 .default_rightmenu_block:hover span {
-  color: white!important;
+  color: white !important;
 }
 .default_rightmenu_block:hover img:first-child {
   transition: 0.5s ease;
@@ -186,6 +186,23 @@
   cursor: pointer;
   font-weight: bold;
   transition: 0.2s ease;
+}
+.projects_rightmenu_block {
+  background: #8A223B;
+  opacity: 80%;
+  border-radius: 5px;
+}
+.projects_rightmenu_block span {
+  color: white !important;
+}
+.projects_rightmenu_block_image img {
+  width: 100%;
+  object-fit: cover;
+}
+.projects_rightmenu_block:hover {
+  transition: 0.2s ease;
+  cursor: pointer;
+  opacity: 100%;
 }
 /***************************************************************
 =================BLOCKS END==============================

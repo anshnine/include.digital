@@ -4,7 +4,7 @@
 * {
   margin: 0 0 0 0;
   font-family: "Montserrat", sans-serif !important;;
-  color: #374A70!important;
+  color: #374A70 !important;
   font-size: 16px;
   box-sizing: border-box;
 }
@@ -67,10 +67,6 @@
 /***************************************************************
 =================Общие классы END==============================
 ***************************************************************/
-
-
-
-
 
 
 /***************************************************************
@@ -141,7 +137,7 @@
     background: #FF6565;
 
     span {
-      color: white!important;
+      color: white !important;
     }
   }
 }
@@ -158,7 +154,7 @@
 
     &_title {
       span {
-        font-size: 32px;
+        font-size: 28px;
       }
     }
 
@@ -231,7 +227,7 @@
 
       &:hover {
         span {
-          color: white!important;
+          color: white !important;
         }
 
         border-bottom-right-radius: 15px;
@@ -260,6 +256,7 @@
 }
 
 .projects {
+
   &_leftmenu {
 
     &_title {
@@ -284,7 +281,35 @@
         transition: 0.2s ease;
       }
     }
-}}
+  }
+
+  &_rightmenu {
+
+    &_block {
+      background: #8A223B;
+      opacity: 80%;
+      border-radius: 5px;
+
+      span {
+        color: white !important;
+      }
+
+      &_image {
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &:hover {
+        transition: 0.2s ease;
+        cursor: pointer;
+        opacity: 100%;
+      }
+    }
+  }
+}
+
 /***************************************************************
 =================BLOCKS END==============================
 ***************************************************************/
