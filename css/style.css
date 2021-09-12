@@ -126,6 +126,8 @@
   transition: 0.2s ease;
 }
 .default_rightmenu_block {
+  height: 180px;
+  width: 400px;
   display: flex;
   background-color: #EEF7FF;
   justify-content: space-between;
