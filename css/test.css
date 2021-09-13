@@ -1,3 +1,6 @@
+::-webkit-scrollbar {
+  width: 0;
+}
 * {
   padding: 0 0 0 0;
   font-family: "Montserrat", sans-serif;
@@ -36,6 +39,15 @@ h4 {
   margin-right: 35px;
   font-size: 14px;
 }
+.burger {
+  width: 40px;
+  height: 16px;
+}
+.burger:hover {
+  cursor: pointer;
+  transition: 0.2s ease;
+  opacity: 70%;
+}
 .header__button {
   display: flex;
   justify-content: center;
@@ -59,7 +71,70 @@ h4 {
   display: flex;
   flex-direction: column;
 }
-.standardblock ul .item a {
+@media (min-width: 544px) {
+  .standardblock__leftmenu {
+    padding-left: 0!important;
+  }
+}
+@media (min-width: 768px) {
+  .standardblock__leftmenu {
+    padding-left: 0!important;
+  }
+}
+@media (min-width: 992px) {
+  .standardblock__leftmenu {
+    padding-left: 15px!important;
+  }
+}
+.standardblock__leftmenu .wrapper h1 {
+  margin-bottom: 30px;
+}
+@media (min-width: 544px) {
+  .standardblock__leftmenu .wrapper h1 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+@media (min-width: 768px) {
+  .standardblock__leftmenu .wrapper h1 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) {
+  .standardblock__leftmenu .wrapper h1 {
+    font-size: 24px!important;
+  }
+}
+.menu_wrapper {
+  overflow: auto ;
+  white-space: nowrap;
+}
+.menu_wrapper::-webkit-scrollbar {
+  width: 0;
+}
+@media (min-width: 768px) {
+  .standardblock__leftmenu .menu_wrapper ul {
+    display: flex;
+  }
+}
+@media (min-width: 992px) {
+  .standardblock__leftmenu .menu_wrapper ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 544px) {
+  .standardblock__leftmenu .menu_wrapper ul {
+    display: flex;
+  }
+}
+.standardblock .menu_wrapper ul li.item {
+  margin-right: 30px;
+}
+.standardblock .menu_wrapper ul li.item:last-child {
+  margin-right: 0;
+}
+.standardblock .menu_wrapper ul .item a {
   text-decoration: none;
   color: #B8B9BE;
   font-size: 14px;
@@ -67,21 +142,61 @@ h4 {
 .standardblock ul .item a:hover {
   color: #343745;
 }
+@media (min-width: 992px) {
+  .standardblock__rightmenu {
+    margin-left: 9px;
+  }
+}
+@media (min-width: 1200px) {
+  .standardblock__rightmenu {
+    margin-left: 23px;
+  }
+}
 .standardblock .standardblock__leftmenu a {
   color: #343745;
   text-decoration: none;
   font-size: 14px;
 }
 .standardblock__rightmenu_item {
+  transition: 0.2s ease;
   border-radius: 5px;
-  width: 400px;
-  height: 180px;
+  flex-direction: column-reverse;
+  width: 240px;
+  height: 310px;
   display: flex;
-  background: #EEF7FF url("/include.digital/img/krug.svg") no-repeat right bottom;
+}
+@media (min-width: 768px) {
+  .standardblock__rightmenu_item {
+    flex-direction: row!important;
+    width: 330px;
+    height: 180px;
+    background: #EEF7FF url("/include.digital/img/krug.svg") no-repeat right bottom !important;
+  }
+}
+@media (min-width: 992px) {
+  .standardblock__rightmenu_item {
+    width: 330px;
+    height: 180px;
+  }
+}
+@media (min-width: 1200px) {
+  .standardblock__rightmenu_item {
+    width: 400px;
+    height: 180px;
+  }
+}
+@media (min-width: 544px) {
+  .standardblock__rightmenu_item {
+    background: #EEF7FF url("/include.digital/img/rotate.svg") no-repeat right top;
+  }
 }
 .standardblock__rightmenu_item:hover {
-  background-color: #374A70;
   cursor: pointer;
+}
+@media (min-width: 544px) {
+  .standardblock__rightmenu_item:hover {
+    background: #374A70 url("/include.digital/img/rotate.svg") no-repeat right top;
+  }
 }
 .standardblock__rightmenu_item:hover span,
 .standardblock__rightmenu_item:hover p {
@@ -98,12 +213,36 @@ h4 {
   margin-top: 25px;
   margin-left: 20px;
 }
+@media (min-width: 768px) {
+  .standardblock_wrapper {
+    width: 204px;
+  }
+}
+@media (min-width: 992px) {
+  .standardblock_wrapper {
+    width: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  .standardblock_wrapper {
+    width: auto;
+  }
+}
 .standardblock_wrapper_paragraph {
   margin-top: 15px;
 }
 .standardblock_image {
   display: flex;
-  align-items: flex-end;
+}
+@media (min-width: 768px) {
+  .standardblock_image {
+    align-self: flex-end !important;
+  }
+}
+@media (min-width: 544px) {
+  .standardblock_image {
+    align-self: center;
+  }
 }
 .standardblock_image img {
   width: 100%;

@@ -11,13 +11,13 @@
 <section id="header">
     <header class="header fixed-top">
         <div class="container d-flex align-items-baseline ">
-            <div class="header__logo col-xl-3  d-sm-none  d-xl-block d-md-block">
+            <div class="header__logo col-xl-3   d-xl-block d-lg-none">
                 <img src="/img/header__logo.svg" alt="">
             </div>
-            <div class="header__logo col-lg-2 d-xl-none d-lg-block d-md-none">
+            <div class="header__logo col-lg-2 d-xl-none d-md-none d-lg-block d-sm-none d-none">
                 <img class="mt5" src="/img/header_sm.svg" alt="">
             </div>
-            <div class="header__menu col-xl-6 col-lg-7 d-xl-block d-lg-block d-md-none">
+            <div class="header__menu col-xl-6 col-lg-7  d-lg-block d-none">
                 <ul class="d-flex">
                     <li>Главная</li>
                     <li>Услуги</li>
@@ -27,20 +27,21 @@
                     <li>Контакты</li>
                 </ul>
             </div>
-            <div class="header__button col-3 ">
+            <div class="header__button col-3  d-none  d-lg-flex ">
                 <span>Обсудить проект</span>
             </div>
+            <div class="burger d-lg-none d-sm-2"><img src="/img/burger.jpg" alt=""></div>
         </div>
     </header>
 
 </section>
 <section id="standardblock" class="mb150">
     <div class="container">
-        <div class="standardblock d-flex">
-            <div class="col-xl-3 standardblock__leftmenu">
+        <div class="standardblock d-flex flex-sm-column flex-lg-row">
+            <div class="col-xl-3 standardblock__leftmenu ">
                 <div class="wrapper"><h1 class="f32">Направления</h1>
                 </div>
-                <div class="wrapper">
+                <div class="menu_wrapper">
                     <ul>
                         <li class="item mb-2">
                             <a href="">Популярные услуги</a>
@@ -63,14 +64,13 @@
 
                     </ul>
                 </div>
-                <div class="wrapper mt-auto">
-                    <a href="" class="allservices mt-xl-auto">Все услуги</a><img class="ml-xl-2" src="/img/Vector.svg"
-                                                                                 alt="">
+                <div class="wrapper mt-auto d-lg-block d-none">
+                    <a href="" class="allservices mt-xl-auto">Все услуги</a><img class="ml-xl-2" src="/img/Vector.svg" alt="">
                 </div>
             </div>
-            <div class="col-xl-9 standardblock__rightmenu">
-                <div class="row">
-                    <div class="standardblock__rightmenu_item  mb-4 mr-4">
+            <div class=" col-lg-9 standardblock__rightmenu">
+                <div class="row mt-sm-3 mt-lg-0">
+                    <div class="standardblock__rightmenu_item  mb-4 mr-sm-4 ">
                         <div class="standardblock_wrapper">
                             <span class="standardblock_wrapper_title font-weight-bold">Корпоративные сайты</span>
                             <p class="standardblock_wrapper_paragraph">Lorem ipsum dolor sit amet, consectetur
@@ -96,7 +96,7 @@
                             </object>
                         </div>
                     </div>
-                    <div class="standardblock__rightmenu_item mr-4">
+                    <div class="standardblock__rightmenu_item mb-4 mb-lg-0 mr-sm-4 ">
                         <div class="standardblock_wrapper">
                             <span class="standardblock_wrapper_title font-weight-bold">Корпоративные сайты</span>
                             <p class="standardblock_wrapper_paragraph">Lorem ipsum dolor sit amet, consectetur
@@ -122,6 +122,7 @@
                             </object>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

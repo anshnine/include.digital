@@ -1,3 +1,10 @@
+@xl: ~"(min-width: 1200px)";
+@lg: ~"(min-width: 992px)";
+@md: ~"(min-width: 768px)";
+@sm: ~"(min-width: 544px)";
+
+
+::-webkit-scrollbar { width: 0;}
 * {
   padding: 0 0 0 0;
   font-family: "Montserrat", sans-serif;
@@ -49,6 +56,18 @@ h1, h2, h3, h4 {
   font-size: 14px;
 }
 
+.burger {
+  width: 40px;
+  height: 16px;
+  //background: url("/include.digital/img/burger.jpg") no-repeat center;
+}
+
+.burger:hover {
+  cursor: pointer;
+  transition: 0.2s ease;
+  opacity: 70%;
+}
+
 .header__button {
   display: flex;
   justify-content: center;
@@ -73,12 +92,71 @@ h1, h2, h3, h4 {
   color: #FF6565;
 }
 
+
 .standardblock__leftmenu {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  @media @sm {
+    padding-left: 0!important;
+  }
+  @media @md {
+    padding-left: 0!important;
+  }
+  @media @lg {
+    padding-left: 15px!important;
+  }
 }
 
-.standardblock ul .item a {
+.standardblock__leftmenu .wrapper h1 {
+  margin-bottom: 30px;
+
+  @media @sm {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  @media @md {
+    font-size: 18px;
+  }
+
+  @media @lg {
+    font-size: 24px!important;
+  }
+}
+
+.menu_wrapper {
+  overflow: auto ;
+  white-space: nowrap;
+
+}
+.menu_wrapper::-webkit-scrollbar {
+  width: 0;
+}
+
+.standardblock__leftmenu .menu_wrapper ul {
+  @media @md {
+    display: flex;
+  }
+  @media @lg {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media @sm {
+    display: flex;
+  }
+
+}
+
+.standardblock .menu_wrapper ul li.item {
+  margin-right: 30px;
+}
+
+.standardblock .menu_wrapper ul li.item:last-child {
+  margin-right: 0;
+}
+
+.standardblock .menu_wrapper ul .item a {
   text-decoration: none;
   color: #B8B9BE;
   font-size: 14px;
@@ -94,7 +172,12 @@ h1, h2, h3, h4 {
 }
 
 .standardblock__rightmenu {
-
+  @media @lg {
+    margin-left: 9px;
+  }
+  @media @xl {
+    margin-left: 23px;
+  }
 }
 
 .standardblock .standardblock__leftmenu a {
@@ -104,19 +187,44 @@ h1, h2, h3, h4 {
 }
 
 .standardblock__rightmenu_item {
+  transition: 0.2s ease ;
   border-radius: 5px;
-  width: 400px;
-  height: 180px;
+  @media @md{
+    flex-direction: row!important;
+    width: 330px;
+    height: 180px;
+    background: #EEF7FF url("/include.digital/img/krug.svg") no-repeat right bottom!important;
+  }
+  @media @lg  {
+    width: 330px;
+    height: 180px;
+  }
+  @media @xl {
+
+    width: 400px;
+    height: 180px;
+  }
+  @media @sm{
+    background: #EEF7FF url("/include.digital/img/rotate.svg") no-repeat right top;
+  }
+  flex-direction: column-reverse;
+    width: 240px;
+    height: 310px;
+
+
   display: flex;
-  background: #EEF7FF url("/include.digital/img/krug.svg") no-repeat right bottom;
+
 
 }
 
 .standardblock__rightmenu_item:hover {
 
-  background-color: #374A70;
-  cursor: pointer;
 
+  cursor: pointer;
+  //background: #374A70 url("/include.digital/img/krug_hover.svg") no-repeat right bottom!important;
+  @media @sm{
+    background: #374A70 url("/include.digital/img/rotate.svg") no-repeat right top;
+  }
   span, p {
     color: white;
   }
@@ -136,6 +244,15 @@ h1, h2, h3, h4 {
 .standardblock_wrapper {
   margin-top: 25px;
   margin-left: 20px;
+  @media @md {
+    width: 204px;
+  }
+  @media @lg {
+    width: 200px;
+  }
+  @media @xl {
+    width: auto;
+  }
 }
 
 .standardblock_wrapper_title {
@@ -148,7 +265,12 @@ h1, h2, h3, h4 {
 
 .standardblock_image {
   display: flex;
-  align-items: flex-end;
+  @media @md {
+    align-self: flex-end!important;
+  }
+  @media @sm {
+    align-self: center;
+  }
 
   img {
     width: 100%;
