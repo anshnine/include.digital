@@ -1,10 +1,16 @@
 @xl: ~"(min-width: 1200px)";
 @lg: ~"(min-width: 992px)";
+@lg: ~"(max-width: 1199px)";
 @md: ~"(min-width: 768px)";
+@md: ~"(max-width: 991px)";
 @sm: ~"(min-width: 544px)";
+@sm: ~"(max-width: 767px)";
+@xss: ~"(max-width: 543px)";
 
+::-webkit-scrollbar {
+  width: 0;
+}
 
-::-webkit-scrollbar { width: 0;}
 * {
   padding: 0 0 0 0;
   font-family: "Montserrat", sans-serif;
@@ -81,7 +87,13 @@ h1, h2, h3, h4 {
   }
 
   background-color: #FF6565;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 80%
+  }
 }
+
 
 .header__menu ul li:last-child {
   margin-right: 0;
@@ -92,24 +104,29 @@ h1, h2, h3, h4 {
   color: #FF6565;
 }
 
+.container {
+  background-color: #1c7430
+}
 
 .standardblock__leftmenu {
   display: flex;
   flex-direction: column;
   @media @sm {
-    padding-left: 0!important;
+    padding-left: 0 !important;
   }
   @media @md {
-    padding-left: 0!important;
+    padding-left: 0 !important;
   }
   @media @lg {
-    padding-left: 15px!important;
+    padding-left: 15px !important;
   }
+  padding-left: 0 !important;
 }
 
 .standardblock__leftmenu .wrapper h1 {
   margin-bottom: 30px;
-
+  font-size: 18px;
+  font-weight: bold;
   @media @sm {
     font-size: 18px;
     font-weight: bold;
@@ -120,15 +137,16 @@ h1, h2, h3, h4 {
   }
 
   @media @lg {
-    font-size: 24px!important;
+    font-size: 24px !important;
   }
 }
 
 .menu_wrapper {
-  overflow: auto ;
+  overflow: auto;
   white-space: nowrap;
 
 }
+
 .menu_wrapper::-webkit-scrollbar {
   width: 0;
 }
@@ -187,15 +205,15 @@ h1, h2, h3, h4 {
 }
 
 .standardblock__rightmenu_item {
-  transition: 0.2s ease ;
+  transition: 0.2s ease;
   border-radius: 5px;
-  @media @md{
-    flex-direction: row!important;
+  @media @md {
+    flex-direction: row !important;
     width: 330px;
     height: 180px;
-    background: #EEF7FF url("/include.digital/img/krug.svg") no-repeat right bottom!important;
+    background: #EEF7FF url("/include.digital/img/krug.svg") no-repeat right bottom !important;
   }
-  @media @lg  {
+  @media @lg {
     width: 330px;
     height: 180px;
   }
@@ -204,12 +222,20 @@ h1, h2, h3, h4 {
     width: 400px;
     height: 180px;
   }
-  @media @sm{
-    background: #EEF7FF url("/include.digital/img/rotate.svg") no-repeat right top;
+  @media @sm {
+
+    background: #EEF7FF ;
+    flex-direction: column-reverse;
   }
-  flex-direction: column-reverse;
-    width: 240px;
-    height: 310px;
+  @media @xss {
+    background: #EEF7FF ;
+    flex-direction: column-reverse;
+  }
+
+  width: 240px;
+  height: 310px;
+  background: #EEF7FF;
+
 
 
   display: flex;
@@ -221,14 +247,19 @@ h1, h2, h3, h4 {
 
 
   cursor: pointer;
-  //background: #374A70 url("/include.digital/img/krug_hover.svg") no-repeat right bottom!important;
-  @media @sm{
-    background: #374A70 url("/include.digital/img/rotate.svg") no-repeat right top;
+
+  @media @md {
+    background: #374A70 url("/include.digital/img/krug_hover.svg") no-repeat right bottom !important;
   }
+  @media @sm {
+    background: #374A70;
+  }
+
   span, p {
     color: white;
   }
 
+  background: #374A70;
 
   img:first-child {
     transition: 0.5s ease;
@@ -244,6 +275,7 @@ h1, h2, h3, h4 {
 .standardblock_wrapper {
   margin-top: 25px;
   margin-left: 20px;
+  margin-bottom: 15px;
   @media @md {
     width: 204px;
   }
@@ -266,7 +298,7 @@ h1, h2, h3, h4 {
 .standardblock_image {
   display: flex;
   @media @md {
-    align-self: flex-end!important;
+    align-self: flex-end !important;
   }
   @media @sm {
     align-self: center;

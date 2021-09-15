@@ -60,6 +60,10 @@ h4 {
 .header__button span {
   color: white;
 }
+.header__button:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
 .header__menu ul li:last-child {
   margin-right: 0;
 }
@@ -67,63 +71,69 @@ h4 {
   cursor: pointer;
   color: #FF6565;
 }
+.container {
+  background-color: #1c7430;
+}
 .standardblock__leftmenu {
   display: flex;
   flex-direction: column;
+  padding-left: 0 !important;
 }
-@media (min-width: 544px) {
+@media (max-width: 767px) {
   .standardblock__leftmenu {
-    padding-left: 0!important;
+    padding-left: 0 !important;
   }
 }
-@media (min-width: 768px) {
+@media (max-width: 991px) {
   .standardblock__leftmenu {
-    padding-left: 0!important;
+    padding-left: 0 !important;
   }
 }
-@media (min-width: 992px) {
+@media (max-width: 1199px) {
   .standardblock__leftmenu {
-    padding-left: 15px!important;
+    padding-left: 15px !important;
   }
 }
 .standardblock__leftmenu .wrapper h1 {
   margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: bold;
 }
-@media (min-width: 544px) {
+@media (max-width: 767px) {
   .standardblock__leftmenu .wrapper h1 {
     font-size: 18px;
     font-weight: bold;
   }
 }
-@media (min-width: 768px) {
+@media (max-width: 991px) {
   .standardblock__leftmenu .wrapper h1 {
     font-size: 18px;
   }
 }
-@media (min-width: 992px) {
+@media (max-width: 1199px) {
   .standardblock__leftmenu .wrapper h1 {
-    font-size: 24px!important;
+    font-size: 24px !important;
   }
 }
 .menu_wrapper {
-  overflow: auto ;
+  overflow: auto;
   white-space: nowrap;
 }
 .menu_wrapper::-webkit-scrollbar {
   width: 0;
 }
-@media (min-width: 768px) {
+@media (max-width: 991px) {
   .standardblock__leftmenu .menu_wrapper ul {
     display: flex;
   }
 }
-@media (min-width: 992px) {
+@media (max-width: 1199px) {
   .standardblock__leftmenu .menu_wrapper ul {
     display: flex;
     flex-direction: column;
   }
 }
-@media (min-width: 544px) {
+@media (max-width: 767px) {
   .standardblock__leftmenu .menu_wrapper ul {
     display: flex;
   }
@@ -142,7 +152,7 @@ h4 {
 .standardblock ul .item a:hover {
   color: #343745;
 }
-@media (min-width: 992px) {
+@media (max-width: 1199px) {
   .standardblock__rightmenu {
     margin-left: 9px;
   }
@@ -160,20 +170,20 @@ h4 {
 .standardblock__rightmenu_item {
   transition: 0.2s ease;
   border-radius: 5px;
-  flex-direction: column-reverse;
   width: 240px;
   height: 310px;
+  background: #EEF7FF;
   display: flex;
 }
-@media (min-width: 768px) {
+@media (max-width: 991px) {
   .standardblock__rightmenu_item {
-    flex-direction: row!important;
+    flex-direction: row !important;
     width: 330px;
     height: 180px;
     background: #EEF7FF url("/include.digital/img/krug.svg") no-repeat right bottom !important;
   }
 }
-@media (min-width: 992px) {
+@media (max-width: 1199px) {
   .standardblock__rightmenu_item {
     width: 330px;
     height: 180px;
@@ -185,17 +195,30 @@ h4 {
     height: 180px;
   }
 }
-@media (min-width: 544px) {
+@media (max-width: 767px) {
   .standardblock__rightmenu_item {
-    background: #EEF7FF url("/include.digital/img/rotate.svg") no-repeat right top;
+    background: #EEF7FF;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 543px) {
+  .standardblock__rightmenu_item {
+    background: #EEF7FF;
+    flex-direction: column-reverse;
   }
 }
 .standardblock__rightmenu_item:hover {
   cursor: pointer;
+  background: #374A70;
 }
-@media (min-width: 544px) {
+@media (max-width: 991px) {
   .standardblock__rightmenu_item:hover {
-    background: #374A70 url("/include.digital/img/rotate.svg") no-repeat right top;
+    background: #374A70 url("/include.digital/img/krug_hover.svg") no-repeat right bottom !important;
+  }
+}
+@media (max-width: 767px) {
+  .standardblock__rightmenu_item:hover {
+    background: #374A70;
   }
 }
 .standardblock__rightmenu_item:hover span,
@@ -212,13 +235,14 @@ h4 {
 .standardblock_wrapper {
   margin-top: 25px;
   margin-left: 20px;
+  margin-bottom: 15px;
 }
-@media (min-width: 768px) {
+@media (max-width: 991px) {
   .standardblock_wrapper {
     width: 204px;
   }
 }
-@media (min-width: 992px) {
+@media (max-width: 1199px) {
   .standardblock_wrapper {
     width: 200px;
   }
@@ -234,12 +258,12 @@ h4 {
 .standardblock_image {
   display: flex;
 }
-@media (min-width: 768px) {
+@media (max-width: 991px) {
   .standardblock_image {
     align-self: flex-end !important;
   }
 }
-@media (min-width: 544px) {
+@media (max-width: 767px) {
   .standardblock_image {
     align-self: center;
   }
